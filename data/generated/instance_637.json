@@ -1,0 +1,9395 @@
+{
+  "comment": "CPU unit = MIPS, Mem unit = GB, Disk unit = GB, BW = Mbps, Datasize = Mb, Response time = second",
+  "computingNodes": [
+    {
+      "nodeID": 1,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 1855,
+        "memory": 4,
+        "disk": 32,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 2,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 2169,
+        "memory": 4,
+        "disk": 32,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 3,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 1839,
+        "memory": 8,
+        "disk": 32,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 4,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 1944,
+        "memory": 4,
+        "disk": 16,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 5,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 2192,
+        "memory": 8,
+        "disk": 8,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 6,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 2167,
+        "memory": 4,
+        "disk": 16,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 7,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 1879,
+        "memory": 8,
+        "disk": 8,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 8,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 2028,
+        "memory": 8,
+        "disk": 8,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 9,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 1820,
+        "memory": 4,
+        "disk": 32,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 10,
+      "nodeTier": 1,
+      "characteristics": {
+        "cpu": 1505,
+        "memory": 4,
+        "disk": 32,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 11,
+      "nodeTier": 2,
+      "characteristics": {
+        "cpu": 10151,
+        "memory": 8,
+        "disk": 128,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 12,
+      "nodeTier": 2,
+      "characteristics": {
+        "cpu": 7503,
+        "memory": 8,
+        "disk": 128,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 13,
+      "nodeTier": 2,
+      "characteristics": {
+        "cpu": 11074,
+        "memory": 16,
+        "disk": 32,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 14,
+      "nodeTier": 2,
+      "characteristics": {
+        "cpu": 10493,
+        "memory": 8,
+        "disk": 32,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 15,
+      "nodeTier": 2,
+      "characteristics": {
+        "cpu": 11493,
+        "memory": 8,
+        "disk": 32,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 16,
+      "nodeTier": 2,
+      "characteristics": {
+        "cpu": 13838,
+        "memory": 16,
+        "disk": 64,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 17,
+      "nodeTier": 2,
+      "characteristics": {
+        "cpu": 14224,
+        "memory": 8,
+        "disk": 32,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 18,
+      "nodeTier": 2,
+      "characteristics": {
+        "cpu": 5045,
+        "memory": 16,
+        "disk": 64,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 19,
+      "nodeTier": 3,
+      "characteristics": {
+        "cpu": 21529,
+        "memory": 32,
+        "disk": 256,
+        "reliabilityScore": 1
+      }
+    },
+    {
+      "nodeID": 20,
+      "nodeTier": 3,
+      "characteristics": {
+        "cpu": 21868,
+        "memory": 32,
+        "disk": 256,
+        "reliabilityScore": 1
+      }
+    }
+  ],
+  "helperNodes": [
+    {
+      "nodeID": 21,
+      "nodeTier": 4,
+      "characteristics": {
+        "cpu": 1995,
+        "memory": 2,
+        "disk": 8,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 22,
+      "nodeTier": 4,
+      "characteristics": {
+        "cpu": 1738,
+        "memory": 4,
+        "disk": 8,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 23,
+      "nodeTier": 4,
+      "characteristics": {
+        "cpu": 2387,
+        "memory": 4,
+        "disk": 8,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 24,
+      "nodeTier": 4,
+      "characteristics": {
+        "cpu": 2447,
+        "memory": 4,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 25,
+      "nodeTier": 4,
+      "characteristics": {
+        "cpu": 2448,
+        "memory": 2,
+        "disk": 8,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 26,
+      "nodeTier": 4,
+      "characteristics": {
+        "cpu": 1517,
+        "memory": 2,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 27,
+      "nodeTier": 4,
+      "characteristics": {
+        "cpu": 1653,
+        "memory": 2,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 28,
+      "nodeTier": 4,
+      "characteristics": {
+        "cpu": 1726,
+        "memory": 4,
+        "disk": 4,
+        "reliability": 1
+      }
+    }
+  ],
+  "usersNodes": [
+    {
+      "nodeID": 29,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1179,
+        "memory": 4,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 30,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 559,
+        "memory": 4,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 31,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 911,
+        "memory": 4,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 32,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 681,
+        "memory": 2,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 33,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1158,
+        "memory": 2,
+        "disk": 8,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 34,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1601,
+        "memory": 4,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 35,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1438,
+        "memory": 2,
+        "disk": 8,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 36,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1304,
+        "memory": 4,
+        "disk": 8,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 37,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1543,
+        "memory": 2,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 38,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1009,
+        "memory": 2,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 39,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1695,
+        "memory": 4,
+        "disk": 8,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 40,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1108,
+        "memory": 2,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 41,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 1612,
+        "memory": 2,
+        "disk": 8,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 42,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 661,
+        "memory": 2,
+        "disk": 4,
+        "reliability": 1
+      }
+    },
+    {
+      "nodeID": 43,
+      "nodeTier": 0,
+      "characteristics": {
+        "cpu": 543,
+        "memory": 2,
+        "disk": 4,
+        "reliability": 1
+      }
+    }
+  ],
+  "services": [
+    {
+      "serviceID": 1,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 1728,
+            "memory": 2.7,
+            "dataSize": 621,
+            "disk": 2.0,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 932,
+            "memory": 2.9,
+            "dataSize": 731,
+            "disk": 2.9,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 1652,
+            "memory": 3.3,
+            "dataSize": 781,
+            "disk": 2.6,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 1606,
+            "memory": 2.9,
+            "dataSize": 627,
+            "disk": 2.2,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 2489,
+            "memory": 3.2,
+            "dataSize": 658,
+            "disk": 1.7,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 43,
+      "helperID": 25
+    },
+    {
+      "serviceID": 2,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 2692,
+            "memory": 1.7,
+            "dataSize": 721,
+            "disk": 2.2,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 2441,
+            "memory": 2.7,
+            "dataSize": 767,
+            "disk": 1.6,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 1232,
+            "memory": 3.1,
+            "dataSize": 612,
+            "disk": 1.9,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 2675,
+            "memory": 2.7,
+            "dataSize": 542,
+            "disk": 1.9,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 979,
+            "memory": 2.0,
+            "dataSize": 529,
+            "disk": 1.2,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 31,
+      "helperID": 25
+    },
+    {
+      "serviceID": 3,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 2219,
+            "memory": 2.6,
+            "dataSize": 733,
+            "disk": 2.6,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 1316,
+            "memory": 2.7,
+            "dataSize": 779,
+            "disk": 1.5,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 898,
+            "memory": 2.1,
+            "dataSize": 617,
+            "disk": 1.9,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 2403,
+            "memory": 2.1,
+            "dataSize": 542,
+            "disk": 1.4,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 1876,
+            "memory": 3.0,
+            "dataSize": 575,
+            "disk": 1.5,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 32,
+      "helperID": 22
+    },
+    {
+      "serviceID": 4,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 824,
+            "memory": 3.1,
+            "dataSize": 601,
+            "disk": 1.3,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 2129,
+            "memory": 3.2,
+            "dataSize": 759,
+            "disk": 2.9,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 1123,
+            "memory": 1.8,
+            "dataSize": 769,
+            "disk": 1.1,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 2166,
+            "memory": 2.0,
+            "dataSize": 576,
+            "disk": 2.5,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 1308,
+            "memory": 2.6,
+            "dataSize": 748,
+            "disk": 2.1,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 29,
+      "helperID": 28
+    },
+    {
+      "serviceID": 5,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 2226,
+            "memory": 3.0,
+            "dataSize": 685,
+            "disk": 1.6,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 1547,
+            "memory": 2.8,
+            "dataSize": 561,
+            "disk": 1.4,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 2477,
+            "memory": 2.6,
+            "dataSize": 748,
+            "disk": 1.8,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 1202,
+            "memory": 2.2,
+            "dataSize": 671,
+            "disk": 1.3,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 2158,
+            "memory": 2.4,
+            "dataSize": 582,
+            "disk": 2.1,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 43,
+      "helperID": 22
+    },
+    {
+      "serviceID": 6,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 2073,
+            "memory": 1.6,
+            "dataSize": 679,
+            "disk": 1.5,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 2195,
+            "memory": 2.2,
+            "dataSize": 672,
+            "disk": 1.7,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 1689,
+            "memory": 1.8,
+            "dataSize": 578,
+            "disk": 1.5,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 2382,
+            "memory": 3.3,
+            "dataSize": 521,
+            "disk": 1.6,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 1327,
+            "memory": 1.8,
+            "dataSize": 800,
+            "disk": 3.0,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 39,
+      "helperID": 24
+    },
+    {
+      "serviceID": 7,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 2450,
+            "memory": 1.8,
+            "dataSize": 793,
+            "disk": 2.8,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 1764,
+            "memory": 2.8,
+            "dataSize": 521,
+            "disk": 1.5,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 1384,
+            "memory": 2.5,
+            "dataSize": 722,
+            "disk": 1.5,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 2246,
+            "memory": 2.0,
+            "dataSize": 564,
+            "disk": 2.5,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 1912,
+            "memory": 1.9,
+            "dataSize": 616,
+            "disk": 2.0,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 34,
+      "helperID": 21
+    },
+    {
+      "serviceID": 8,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 1427,
+            "memory": 3.2,
+            "dataSize": 701,
+            "disk": 1.2,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 1117,
+            "memory": 2.1,
+            "dataSize": 674,
+            "disk": 1.9,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 2220,
+            "memory": 2.1,
+            "dataSize": 672,
+            "disk": 1.0,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 1362,
+            "memory": 1.5,
+            "dataSize": 794,
+            "disk": 2.9,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 962,
+            "memory": 2.3,
+            "dataSize": 573,
+            "disk": 2.6,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 37,
+      "helperID": 27
+    },
+    {
+      "serviceID": 9,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 2859,
+            "memory": 1.7,
+            "dataSize": 708,
+            "disk": 1.3,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 2873,
+            "memory": 1.5,
+            "dataSize": 755,
+            "disk": 1.7,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 2699,
+            "memory": 1.8,
+            "dataSize": 516,
+            "disk": 1.1,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 1290,
+            "memory": 1.9,
+            "dataSize": 598,
+            "disk": 2.9,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 1231,
+            "memory": 1.9,
+            "dataSize": 628,
+            "disk": 1.8,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 33,
+      "helperID": 25
+    },
+    {
+      "serviceID": 10,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 2997,
+            "memory": 2.6,
+            "dataSize": 640,
+            "disk": 1.8,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 2683,
+            "memory": 1.5,
+            "dataSize": 736,
+            "disk": 1.3,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 2108,
+            "memory": 2.5,
+            "dataSize": 716,
+            "disk": 1.1,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 2087,
+            "memory": 3.3,
+            "dataSize": 753,
+            "disk": 2.1,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 1421,
+            "memory": 2.6,
+            "dataSize": 553,
+            "disk": 2.3,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 35,
+      "helperID": 27
+    },
+    {
+      "serviceID": 11,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 1262,
+            "memory": 2.5,
+            "dataSize": 596,
+            "disk": 1.1,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 2875,
+            "memory": 1.8,
+            "dataSize": 529,
+            "disk": 1.8,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 1700,
+            "memory": 3.2,
+            "dataSize": 591,
+            "disk": 2.6,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 2500,
+            "memory": 1.5,
+            "dataSize": 648,
+            "disk": 1.0,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 1457,
+            "memory": 2.0,
+            "dataSize": 641,
+            "disk": 2.3,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 32,
+      "helperID": 26
+    },
+    {
+      "serviceID": 12,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 2132,
+            "memory": 2.4,
+            "dataSize": 733,
+            "disk": 2.3,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 1996,
+            "memory": 1.6,
+            "dataSize": 777,
+            "disk": 2.2,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 2317,
+            "memory": 2.7,
+            "dataSize": 763,
+            "disk": 3.0,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 1481,
+            "memory": 1.7,
+            "dataSize": 718,
+            "disk": 2.6,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 2772,
+            "memory": 2.7,
+            "dataSize": 500,
+            "disk": 1.9,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 41,
+      "helperID": 23
+    },
+    {
+      "serviceID": 13,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 1328,
+            "memory": 3.1,
+            "dataSize": 621,
+            "disk": 2.6,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 864,
+            "memory": 3.1,
+            "dataSize": 600,
+            "disk": 1.8,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 2981,
+            "memory": 1.7,
+            "dataSize": 522,
+            "disk": 1.7,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 1177,
+            "memory": 2.6,
+            "dataSize": 721,
+            "disk": 2.5,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 1024,
+            "memory": 2.4,
+            "dataSize": 616,
+            "disk": 2.7,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 33,
+      "helperID": 26
+    },
+    {
+      "serviceID": 14,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 1107,
+            "memory": 1.6,
+            "dataSize": 576,
+            "disk": 1.5,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 1780,
+            "memory": 2.4,
+            "dataSize": 593,
+            "disk": 1.8,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 1292,
+            "memory": 1.8,
+            "dataSize": 754,
+            "disk": 1.3,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 2194,
+            "memory": 2.9,
+            "dataSize": 680,
+            "disk": 1.6,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 966,
+            "memory": 3.1,
+            "dataSize": 567,
+            "disk": 2.2,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 37,
+      "helperID": 26
+    },
+    {
+      "serviceID": 15,
+      "components": [
+        {
+          "componentID": 1,
+          "characteristics": {
+            "cpu": 1467,
+            "memory": 3.2,
+            "dataSize": 623,
+            "disk": 1.9,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 2,
+          "characteristics": {
+            "cpu": 2306,
+            "memory": 2.4,
+            "dataSize": 590,
+            "disk": 2.4,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 3,
+          "characteristics": {
+            "cpu": 2271,
+            "memory": 2.8,
+            "dataSize": 592,
+            "disk": 2.8,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 4,
+          "characteristics": {
+            "cpu": 1299,
+            "memory": 1.8,
+            "dataSize": 579,
+            "disk": 2.7,
+            "reliabilityScore": 1
+          }
+        },
+        {
+          "componentID": 5,
+          "characteristics": {
+            "cpu": 1364,
+            "memory": 3.1,
+            "dataSize": 556,
+            "disk": 2.4,
+            "reliabilityScore": 1
+          }
+        }
+      ],
+      "userID": 43,
+      "helperID": 23
+    }
+  ],
+  "componentConnections": [
+    [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "infraConnections": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        473.73,
+        0.26
+      ],
+      [
+        403.43,
+        0.02
+      ],
+      [
+        403.09,
+        0.45
+      ],
+      [
+        427.54,
+        0.3
+      ],
+      [
+        136.33,
+        0.25
+      ],
+      [
+        352.21,
+        0.41
+      ],
+      [
+        355.59,
+        0.18
+      ],
+      [
+        378.88,
+        0.13
+      ],
+      [
+        183.86,
+        0.96
+      ],
+      [
+        233.78,
+        0.2
+      ],
+      [
+        388.62,
+        0.04
+      ],
+      [
+        434.3,
+        0.85
+      ],
+      [
+        451.48,
+        0.54
+      ],
+      [
+        427.18,
+        0.81
+      ],
+      [
+        125.98,
+        0.18
+      ],
+      [
+        380.89,
+        0.14
+      ],
+      [
+        364.06,
+        0.78
+      ],
+      [
+        405.75,
+        0.65
+      ],
+      [
+        166.3,
+        0.87
+      ],
+      [
+        125.85,
+        0.6
+      ],
+      [
+        296.98,
+        0.09
+      ],
+      [
+        340.72,
+        0.49
+      ],
+      [
+        476.19,
+        0.26
+      ],
+      [
+        328.96,
+        0.36
+      ],
+      [
+        296.19,
+        0.06
+      ],
+      [
+        175.38,
+        0.51
+      ],
+      [
+        275.18,
+        0.28
+      ],
+      [
+        250.04,
+        0.36
+      ],
+      [
+        332.04,
+        0.42
+      ],
+      [
+        245.78,
+        0.09
+      ],
+      [
+        294.56,
+        0.33
+      ],
+      [
+        107.96,
+        0.97
+      ],
+      [
+        351.84,
+        0.87
+      ],
+      [
+        237.79,
+        0.49
+      ],
+      [
+        189.12,
+        0.12
+      ],
+      [
+        360.92,
+        0.7
+      ],
+      [
+        219.31,
+        0.23
+      ],
+      [
+        159.25,
+        0.28
+      ],
+      [
+        127.13,
+        0.13
+      ],
+      [
+        170.53,
+        0.63
+      ],
+      [
+        264.41,
+        0.16
+      ],
+      [
+        275.26,
+        0.44
+      ],
+      [
+        169.42,
+        0.48
+      ]
+    ],
+    [
+      [
+        271.24,
+        0.98
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        473.78,
+        0.51
+      ],
+      [
+        320.11,
+        0.34
+      ],
+      [
+        321.81,
+        0.84
+      ],
+      [
+        497.65,
+        0.12
+      ],
+      [
+        315.62,
+        0.28
+      ],
+      [
+        163.47,
+        0.19
+      ],
+      [
+        472.42,
+        0.91
+      ],
+      [
+        420.22,
+        0.88
+      ],
+      [
+        316.31,
+        0.79
+      ],
+      [
+        183.96,
+        0.85
+      ],
+      [
+        244.6,
+        0.42
+      ],
+      [
+        206.85,
+        0.43
+      ],
+      [
+        386.66,
+        0.13
+      ],
+      [
+        198.73,
+        0.2
+      ],
+      [
+        393.41,
+        0.02
+      ],
+      [
+        195.42,
+        0.56
+      ],
+      [
+        346.5,
+        0.01
+      ],
+      [
+        172.36,
+        0.25
+      ],
+      [
+        476.26,
+        0.93
+      ],
+      [
+        116.87,
+        0.62
+      ],
+      [
+        393.67,
+        0.53
+      ],
+      [
+        145.02,
+        0.21
+      ],
+      [
+        238.95,
+        0.98
+      ],
+      [
+        244.38,
+        0.88
+      ],
+      [
+        244.78,
+        0.83
+      ],
+      [
+        268.66,
+        0.14
+      ],
+      [
+        452.91,
+        0.4
+      ],
+      [
+        488.14,
+        0.8
+      ],
+      [
+        194.29,
+        0.13
+      ],
+      [
+        284.7,
+        0.24
+      ],
+      [
+        338.88,
+        0.42
+      ],
+      [
+        208.61,
+        0.03
+      ],
+      [
+        342.31,
+        0.22
+      ],
+      [
+        243.87,
+        0.51
+      ],
+      [
+        366.43,
+        0.81
+      ],
+      [
+        290.06,
+        0.32
+      ],
+      [
+        450.36,
+        0.62
+      ],
+      [
+        459.98,
+        0.75
+      ],
+      [
+        137.97,
+        0.12
+      ],
+      [
+        239.37,
+        0.67
+      ],
+      [
+        139.79,
+        0.24
+      ],
+      [
+        283.11,
+        0.93
+      ]
+    ],
+    [
+      [
+        147.73,
+        0.76
+      ],
+      [
+        455.3,
+        0.91
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        391.56,
+        0.58
+      ],
+      [
+        239.5,
+        0.66
+      ],
+      [
+        297.36,
+        0.19
+      ],
+      [
+        486.67,
+        0.67
+      ],
+      [
+        239.75,
+        0.96
+      ],
+      [
+        224.05,
+        0.14
+      ],
+      [
+        385.0,
+        0.58
+      ],
+      [
+        436.49,
+        0.31
+      ],
+      [
+        468.78,
+        0.41
+      ],
+      [
+        259.1,
+        0.67
+      ],
+      [
+        332.24,
+        0.04
+      ],
+      [
+        254.3,
+        0.95
+      ],
+      [
+        188.22,
+        0.07
+      ],
+      [
+        338.25,
+        0.5
+      ],
+      [
+        474.51,
+        0.71
+      ],
+      [
+        102.46,
+        0.53
+      ],
+      [
+        119.59,
+        0.68
+      ],
+      [
+        392.72,
+        0.84
+      ],
+      [
+        273.29,
+        0.36
+      ],
+      [
+        258.94,
+        0.88
+      ],
+      [
+        217.11,
+        0.17
+      ],
+      [
+        326.32,
+        0.79
+      ],
+      [
+        406.12,
+        0.9
+      ],
+      [
+        152.2,
+        0.7
+      ],
+      [
+        272.56,
+        0.97
+      ],
+      [
+        100.44,
+        0.63
+      ],
+      [
+        316.08,
+        0.05
+      ],
+      [
+        160.42,
+        0.63
+      ],
+      [
+        286.09,
+        0.51
+      ],
+      [
+        165.85,
+        0.76
+      ],
+      [
+        115.57,
+        0.96
+      ],
+      [
+        377.24,
+        0.16
+      ],
+      [
+        433.89,
+        0.15
+      ],
+      [
+        203.34,
+        0.5
+      ],
+      [
+        397.69,
+        0.06
+      ],
+      [
+        367.21,
+        0.45
+      ],
+      [
+        447.42,
+        0.57
+      ],
+      [
+        368.18,
+        0.72
+      ],
+      [
+        303.75,
+        0.33
+      ],
+      [
+        312.32,
+        0.21
+      ],
+      [
+        415.76,
+        0.94
+      ]
+    ],
+    [
+      [
+        276.77,
+        0.44
+      ],
+      [
+        496.96,
+        0.31
+      ],
+      [
+        489.74,
+        0.46
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        338.51,
+        0.36
+      ],
+      [
+        488.14,
+        0.75
+      ],
+      [
+        459.43,
+        0.37
+      ],
+      [
+        184.52,
+        0.16
+      ],
+      [
+        284.73,
+        0.1
+      ],
+      [
+        331.76,
+        0.6
+      ],
+      [
+        282.26,
+        0.86
+      ],
+      [
+        402.07,
+        0.25
+      ],
+      [
+        271.5,
+        0.87
+      ],
+      [
+        393.57,
+        0.12
+      ],
+      [
+        301.3,
+        0.42
+      ],
+      [
+        239.85,
+        0.34
+      ],
+      [
+        319.25,
+        0.42
+      ],
+      [
+        485.09,
+        0.43
+      ],
+      [
+        252.07,
+        0.69
+      ],
+      [
+        441.04,
+        0.05
+      ],
+      [
+        231.99,
+        0.78
+      ],
+      [
+        420.37,
+        0.83
+      ],
+      [
+        222.62,
+        0.26
+      ],
+      [
+        420.02,
+        0.18
+      ],
+      [
+        452.78,
+        1.0
+      ],
+      [
+        394.27,
+        0.46
+      ],
+      [
+        363.95,
+        0.23
+      ],
+      [
+        112.31,
+        0.05
+      ],
+      [
+        284.94,
+        0.55
+      ],
+      [
+        415.07,
+        0.1
+      ],
+      [
+        165.66,
+        0.38
+      ],
+      [
+        193.42,
+        0.68
+      ],
+      [
+        441.42,
+        0.58
+      ],
+      [
+        343.1,
+        0.07
+      ],
+      [
+        216.5,
+        0.57
+      ],
+      [
+        417.1,
+        0.12
+      ],
+      [
+        127.61,
+        0.7
+      ],
+      [
+        280.24,
+        0.71
+      ],
+      [
+        425.66,
+        0.97
+      ],
+      [
+        105.68,
+        0.7
+      ],
+      [
+        257.77,
+        0.74
+      ],
+      [
+        123.21,
+        0.93
+      ],
+      [
+        423.03,
+        0.64
+      ],
+      [
+        308.22,
+        0.25
+      ]
+    ],
+    [
+      [
+        369.59,
+        0.59
+      ],
+      [
+        264.49,
+        0.18
+      ],
+      [
+        366.95,
+        0.13
+      ],
+      [
+        209.9,
+        0.09
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        269.4,
+        0.89
+      ],
+      [
+        441.65,
+        0.56
+      ],
+      [
+        107.38,
+        0.68
+      ],
+      [
+        358.51,
+        0.17
+      ],
+      [
+        420.75,
+        0.93
+      ],
+      [
+        178.71,
+        0.85
+      ],
+      [
+        420.67,
+        0.76
+      ],
+      [
+        260.04,
+        0.26
+      ],
+      [
+        162.7,
+        0.89
+      ],
+      [
+        182.52,
+        0.73
+      ],
+      [
+        441.99,
+        0.38
+      ],
+      [
+        140.92,
+        0.97
+      ],
+      [
+        277.11,
+        0.86
+      ],
+      [
+        484.05,
+        0.57
+      ],
+      [
+        143.6,
+        0.04
+      ],
+      [
+        237.27,
+        0.28
+      ],
+      [
+        207.03,
+        0.88
+      ],
+      [
+        415.86,
+        0.3
+      ],
+      [
+        214.86,
+        0.3
+      ],
+      [
+        402.48,
+        0.96
+      ],
+      [
+        149.06,
+        0.1
+      ],
+      [
+        271.59,
+        0.66
+      ],
+      [
+        140.91,
+        0.35
+      ],
+      [
+        298.11,
+        0.99
+      ],
+      [
+        168.63,
+        0.94
+      ],
+      [
+        462.62,
+        0.08
+      ],
+      [
+        104.67,
+        0.8
+      ],
+      [
+        418.63,
+        0.76
+      ],
+      [
+        189.6,
+        0.21
+      ],
+      [
+        326.24,
+        0.46
+      ],
+      [
+        174.01,
+        0.34
+      ],
+      [
+        438.35,
+        0.17
+      ],
+      [
+        386.57,
+        0.1
+      ],
+      [
+        296.31,
+        0.24
+      ],
+      [
+        497.88,
+        0.58
+      ],
+      [
+        222.73,
+        0.89
+      ],
+      [
+        370.7,
+        0.95
+      ],
+      [
+        475.57,
+        0.88
+      ],
+      [
+        446.82,
+        0.32
+      ]
+    ],
+    [
+      [
+        101.57,
+        0.23
+      ],
+      [
+        425.86,
+        0.58
+      ],
+      [
+        244.74,
+        0.07
+      ],
+      [
+        208.28,
+        0.2
+      ],
+      [
+        390.11,
+        0.23
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        490.19,
+        0.34
+      ],
+      [
+        121.6,
+        0.39
+      ],
+      [
+        480.31,
+        0.09
+      ],
+      [
+        494.65,
+        0.16
+      ],
+      [
+        345.14,
+        0.93
+      ],
+      [
+        204.82,
+        0.97
+      ],
+      [
+        439.1,
+        0.98
+      ],
+      [
+        497.45,
+        0.8
+      ],
+      [
+        287.9,
+        0.96
+      ],
+      [
+        119.33,
+        0.22
+      ],
+      [
+        320.14,
+        0.06
+      ],
+      [
+        330.42,
+        0.87
+      ],
+      [
+        324.83,
+        0.98
+      ],
+      [
+        345.82,
+        0.49
+      ],
+      [
+        412.65,
+        0.92
+      ],
+      [
+        239.1,
+        0.77
+      ],
+      [
+        334.37,
+        0.0
+      ],
+      [
+        366.41,
+        0.23
+      ],
+      [
+        349.05,
+        0.15
+      ],
+      [
+        490.93,
+        0.21
+      ],
+      [
+        448.93,
+        0.99
+      ],
+      [
+        431.32,
+        0.49
+      ],
+      [
+        131.6,
+        0.28
+      ],
+      [
+        322.57,
+        0.54
+      ],
+      [
+        495.47,
+        0.5
+      ],
+      [
+        395.5,
+        0.3
+      ],
+      [
+        121.91,
+        0.8
+      ],
+      [
+        468.19,
+        0.48
+      ],
+      [
+        393.16,
+        0.72
+      ],
+      [
+        154.62,
+        0.48
+      ],
+      [
+        296.84,
+        0.03
+      ],
+      [
+        356.16,
+        0.77
+      ],
+      [
+        147.83,
+        0.6
+      ],
+      [
+        462.6,
+        0.28
+      ],
+      [
+        307.51,
+        0.95
+      ],
+      [
+        315.6,
+        0.99
+      ],
+      [
+        323.62,
+        0.08
+      ],
+      [
+        225.03,
+        0.83
+      ]
+    ],
+    [
+      [
+        232.18,
+        0.46
+      ],
+      [
+        261.24,
+        0.65
+      ],
+      [
+        166.59,
+        0.83
+      ],
+      [
+        193.61,
+        0.6
+      ],
+      [
+        136.52,
+        0.39
+      ],
+      [
+        198.29,
+        0.7
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        314.55,
+        0.21
+      ],
+      [
+        421.93,
+        0.49
+      ],
+      [
+        359.81,
+        0.91
+      ],
+      [
+        410.56,
+        0.41
+      ],
+      [
+        369.14,
+        0.63
+      ],
+      [
+        173.1,
+        0.51
+      ],
+      [
+        137.73,
+        0.01
+      ],
+      [
+        471.09,
+        0.47
+      ],
+      [
+        270.1,
+        0.91
+      ],
+      [
+        415.36,
+        0.73
+      ],
+      [
+        337.76,
+        0.65
+      ],
+      [
+        484.42,
+        0.68
+      ],
+      [
+        378.09,
+        0.59
+      ],
+      [
+        116.99,
+        0.98
+      ],
+      [
+        202.45,
+        0.26
+      ],
+      [
+        144.0,
+        0.26
+      ],
+      [
+        172.29,
+        0.66
+      ],
+      [
+        209.42,
+        0.07
+      ],
+      [
+        433.27,
+        0.24
+      ],
+      [
+        278.19,
+        0.3
+      ],
+      [
+        201.39,
+        0.78
+      ],
+      [
+        120.2,
+        0.08
+      ],
+      [
+        391.05,
+        0.05
+      ],
+      [
+        291.28,
+        0.04
+      ],
+      [
+        369.85,
+        0.03
+      ],
+      [
+        401.7,
+        0.93
+      ],
+      [
+        173.66,
+        0.44
+      ],
+      [
+        291.8,
+        0.88
+      ],
+      [
+        345.44,
+        0.35
+      ],
+      [
+        447.49,
+        0.03
+      ],
+      [
+        225.69,
+        0.02
+      ],
+      [
+        251.12,
+        0.39
+      ],
+      [
+        233.31,
+        0.47
+      ],
+      [
+        200.18,
+        0.08
+      ],
+      [
+        457.37,
+        0.83
+      ],
+      [
+        358.25,
+        0.01
+      ],
+      [
+        445.39,
+        0.19
+      ]
+    ],
+    [
+      [
+        404.03,
+        0.44
+      ],
+      [
+        126.17,
+        0.04
+      ],
+      [
+        230.85,
+        0.77
+      ],
+      [
+        139.02,
+        0.53
+      ],
+      [
+        220.72,
+        0.69
+      ],
+      [
+        335.05,
+        0.24
+      ],
+      [
+        409.71,
+        0.88
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        481.98,
+        0.45
+      ],
+      [
+        288.49,
+        0.99
+      ],
+      [
+        448.12,
+        0.16
+      ],
+      [
+        187.05,
+        0.74
+      ],
+      [
+        317.14,
+        0.87
+      ],
+      [
+        253.6,
+        0.04
+      ],
+      [
+        481.46,
+        0.24
+      ],
+      [
+        482.74,
+        0.08
+      ],
+      [
+        341.3,
+        0.14
+      ],
+      [
+        477.14,
+        0.8
+      ],
+      [
+        403.54,
+        0.93
+      ],
+      [
+        260.96,
+        0.23
+      ],
+      [
+        316.5,
+        0.72
+      ],
+      [
+        335.33,
+        0.33
+      ],
+      [
+        431.4,
+        0.48
+      ],
+      [
+        275.19,
+        0.0
+      ],
+      [
+        366.66,
+        0.45
+      ],
+      [
+        177.42,
+        0.37
+      ],
+      [
+        410.48,
+        0.13
+      ],
+      [
+        471.61,
+        0.61
+      ],
+      [
+        299.63,
+        0.86
+      ],
+      [
+        326.98,
+        0.84
+      ],
+      [
+        449.2,
+        0.29
+      ],
+      [
+        207.25,
+        0.49
+      ],
+      [
+        464.15,
+        0.29
+      ],
+      [
+        256.29,
+        0.18
+      ],
+      [
+        303.54,
+        0.63
+      ],
+      [
+        187.13,
+        0.25
+      ],
+      [
+        136.1,
+        0.4
+      ],
+      [
+        470.02,
+        0.71
+      ],
+      [
+        487.09,
+        0.84
+      ],
+      [
+        391.77,
+        0.29
+      ],
+      [
+        287.76,
+        0.25
+      ],
+      [
+        173.49,
+        0.56
+      ],
+      [
+        407.65,
+        0.93
+      ],
+      [
+        121.21,
+        0.05
+      ]
+    ],
+    [
+      [
+        189.45,
+        0.48
+      ],
+      [
+        278.27,
+        0.46
+      ],
+      [
+        487.59,
+        0.66
+      ],
+      [
+        332.94,
+        0.71
+      ],
+      [
+        455.43,
+        0.4
+      ],
+      [
+        491.9,
+        0.67
+      ],
+      [
+        429.9,
+        0.45
+      ],
+      [
+        442.01,
+        0.47
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        165.62,
+        0.81
+      ],
+      [
+        348.08,
+        0.79
+      ],
+      [
+        216.92,
+        0.84
+      ],
+      [
+        355.77,
+        0.15
+      ],
+      [
+        208.31,
+        0.42
+      ],
+      [
+        223.29,
+        0.68
+      ],
+      [
+        281.62,
+        0.72
+      ],
+      [
+        189.35,
+        0.19
+      ],
+      [
+        112.93,
+        0.96
+      ],
+      [
+        428.44,
+        0.13
+      ],
+      [
+        119.79,
+        0.09
+      ],
+      [
+        441.25,
+        0.3
+      ],
+      [
+        152.25,
+        0.06
+      ],
+      [
+        412.54,
+        0.26
+      ],
+      [
+        240.33,
+        0.73
+      ],
+      [
+        396.61,
+        0.57
+      ],
+      [
+        182.84,
+        0.86
+      ],
+      [
+        496.69,
+        0.87
+      ],
+      [
+        286.62,
+        0.21
+      ],
+      [
+        152.43,
+        0.44
+      ],
+      [
+        220.89,
+        0.89
+      ],
+      [
+        318.98,
+        0.36
+      ],
+      [
+        441.64,
+        0.64
+      ],
+      [
+        286.0,
+        0.3
+      ],
+      [
+        204.44,
+        0.79
+      ],
+      [
+        135.8,
+        0.96
+      ],
+      [
+        180.18,
+        0.86
+      ],
+      [
+        486.27,
+        0.28
+      ],
+      [
+        337.1,
+        0.18
+      ],
+      [
+        159.13,
+        0.07
+      ],
+      [
+        458.28,
+        0.78
+      ],
+      [
+        344.6,
+        0.46
+      ],
+      [
+        111.38,
+        0.66
+      ],
+      [
+        187.79,
+        0.55
+      ],
+      [
+        240.13,
+        0.38
+      ]
+    ],
+    [
+      [
+        278.64,
+        0.86
+      ],
+      [
+        318.34,
+        0.71
+      ],
+      [
+        363.74,
+        0.74
+      ],
+      [
+        290.54,
+        0.3
+      ],
+      [
+        251.38,
+        0.25
+      ],
+      [
+        395.36,
+        0.13
+      ],
+      [
+        373.44,
+        0.17
+      ],
+      [
+        406.71,
+        0.09
+      ],
+      [
+        205.25,
+        0.29
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        277.16,
+        0.29
+      ],
+      [
+        453.57,
+        0.1
+      ],
+      [
+        232.53,
+        0.06
+      ],
+      [
+        192.09,
+        0.01
+      ],
+      [
+        484.68,
+        0.07
+      ],
+      [
+        201.67,
+        0.32
+      ],
+      [
+        288.91,
+        0.26
+      ],
+      [
+        304.8,
+        0.99
+      ],
+      [
+        234.8,
+        0.15
+      ],
+      [
+        211.55,
+        0.79
+      ],
+      [
+        232.8,
+        0.02
+      ],
+      [
+        328.21,
+        0.88
+      ],
+      [
+        465.79,
+        0.34
+      ],
+      [
+        256.52,
+        0.9
+      ],
+      [
+        267.17,
+        1.0
+      ],
+      [
+        451.44,
+        0.22
+      ],
+      [
+        345.83,
+        0.07
+      ],
+      [
+        460.74,
+        0.07
+      ],
+      [
+        382.06,
+        0.84
+      ],
+      [
+        444.7,
+        0.65
+      ],
+      [
+        168.07,
+        0.99
+      ],
+      [
+        143.84,
+        0.34
+      ],
+      [
+        282.04,
+        0.12
+      ],
+      [
+        456.55,
+        0.42
+      ],
+      [
+        110.88,
+        0.81
+      ],
+      [
+        100.73,
+        0.91
+      ],
+      [
+        327.11,
+        0.59
+      ],
+      [
+        119.81,
+        0.83
+      ],
+      [
+        318.47,
+        0.89
+      ],
+      [
+        367.84,
+        0.41
+      ],
+      [
+        137.47,
+        0.88
+      ],
+      [
+        423.34,
+        0.1
+      ],
+      [
+        126.01,
+        0.91
+      ],
+      [
+        242.03,
+        0.51
+      ]
+    ],
+    [
+      [
+        160.46,
+        0.9
+      ],
+      [
+        217.74,
+        0.58
+      ],
+      [
+        386.19,
+        0.89
+      ],
+      [
+        467.22,
+        0.94
+      ],
+      [
+        234.73,
+        0.07
+      ],
+      [
+        144.26,
+        0.47
+      ],
+      [
+        374.29,
+        0.45
+      ],
+      [
+        187.22,
+        0.26
+      ],
+      [
+        497.75,
+        0.97
+      ],
+      [
+        439.07,
+        0.09
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        350.53,
+        0.02
+      ],
+      [
+        268.3,
+        0.35
+      ],
+      [
+        241.17,
+        0.46
+      ],
+      [
+        423.97,
+        0.21
+      ],
+      [
+        470.71,
+        0.5
+      ],
+      [
+        382.38,
+        0.32
+      ],
+      [
+        341.49,
+        0.35
+      ],
+      [
+        427.55,
+        0.0
+      ],
+      [
+        409.27,
+        0.44
+      ],
+      [
+        185.1,
+        0.85
+      ],
+      [
+        245.13,
+        0.57
+      ],
+      [
+        433.75,
+        0.37
+      ],
+      [
+        101.44,
+        0.31
+      ],
+      [
+        405.25,
+        0.64
+      ],
+      [
+        450.58,
+        0.42
+      ],
+      [
+        261.18,
+        0.02
+      ],
+      [
+        409.28,
+        0.12
+      ],
+      [
+        188.77,
+        0.86
+      ],
+      [
+        188.61,
+        0.25
+      ],
+      [
+        217.69,
+        0.2
+      ],
+      [
+        418.63,
+        0.94
+      ],
+      [
+        193.26,
+        0.97
+      ],
+      [
+        494.14,
+        0.72
+      ],
+      [
+        106.9,
+        1.0
+      ],
+      [
+        382.2,
+        0.98
+      ],
+      [
+        357.34,
+        0.87
+      ],
+      [
+        116.36,
+        0.82
+      ],
+      [
+        201.73,
+        0.24
+      ],
+      [
+        119.73,
+        0.86
+      ],
+      [
+        277.2,
+        0.46
+      ],
+      [
+        354.1,
+        0.9
+      ],
+      [
+        351.3,
+        0.31
+      ],
+      [
+        391.24,
+        0.92
+      ]
+    ],
+    [
+      [
+        192.39,
+        0.3
+      ],
+      [
+        283.43,
+        0.11
+      ],
+      [
+        191.06,
+        0.27
+      ],
+      [
+        244.46,
+        0.62
+      ],
+      [
+        220.39,
+        0.58
+      ],
+      [
+        424.46,
+        0.46
+      ],
+      [
+        231.16,
+        0.38
+      ],
+      [
+        225.28,
+        0.57
+      ],
+      [
+        426.4,
+        0.69
+      ],
+      [
+        479.52,
+        0.68
+      ],
+      [
+        384.48,
+        0.67
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        405.4,
+        0.15
+      ],
+      [
+        492.53,
+        0.93
+      ],
+      [
+        126.87,
+        0.77
+      ],
+      [
+        235.31,
+        0.02
+      ],
+      [
+        295.89,
+        0.16
+      ],
+      [
+        462.77,
+        0.4
+      ],
+      [
+        154.69,
+        0.06
+      ],
+      [
+        178.94,
+        0.69
+      ],
+      [
+        369.9,
+        0.85
+      ],
+      [
+        254.53,
+        0.59
+      ],
+      [
+        377.52,
+        0.37
+      ],
+      [
+        300.43,
+        0.87
+      ],
+      [
+        170.18,
+        0.91
+      ],
+      [
+        231.8,
+        0.32
+      ],
+      [
+        181.14,
+        0.38
+      ],
+      [
+        328.81,
+        0.66
+      ],
+      [
+        225.79,
+        0.93
+      ],
+      [
+        395.16,
+        0.23
+      ],
+      [
+        230.68,
+        0.59
+      ],
+      [
+        438.8,
+        0.53
+      ],
+      [
+        455.72,
+        0.98
+      ],
+      [
+        382.82,
+        0.85
+      ],
+      [
+        325.45,
+        0.24
+      ],
+      [
+        212.65,
+        0.96
+      ],
+      [
+        144.27,
+        0.47
+      ],
+      [
+        309.5,
+        0.75
+      ],
+      [
+        414.27,
+        0.35
+      ],
+      [
+        110.87,
+        0.77
+      ],
+      [
+        145.92,
+        0.33
+      ],
+      [
+        341.39,
+        0.57
+      ],
+      [
+        433.17,
+        0.31
+      ],
+      [
+        293.25,
+        0.29
+      ]
+    ],
+    [
+      [
+        350.56,
+        0.22
+      ],
+      [
+        193.48,
+        0.11
+      ],
+      [
+        410.88,
+        0.53
+      ],
+      [
+        238.86,
+        0.42
+      ],
+      [
+        195.97,
+        0.09
+      ],
+      [
+        429.67,
+        0.67
+      ],
+      [
+        290.03,
+        0.45
+      ],
+      [
+        123.24,
+        0.74
+      ],
+      [
+        410.49,
+        0.16
+      ],
+      [
+        356.19,
+        0.12
+      ],
+      [
+        364.64,
+        0.79
+      ],
+      [
+        460.32,
+        0.74
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        147.53,
+        0.62
+      ],
+      [
+        251.78,
+        0.49
+      ],
+      [
+        392.06,
+        0.35
+      ],
+      [
+        199.4,
+        0.89
+      ],
+      [
+        407.52,
+        0.93
+      ],
+      [
+        247.7,
+        0.63
+      ],
+      [
+        387.58,
+        0.94
+      ],
+      [
+        449.16,
+        0.89
+      ],
+      [
+        160.09,
+        0.05
+      ],
+      [
+        311.32,
+        0.97
+      ],
+      [
+        117.56,
+        0.72
+      ],
+      [
+        482.3,
+        0.56
+      ],
+      [
+        133.47,
+        0.09
+      ],
+      [
+        314.57,
+        0.8
+      ],
+      [
+        476.0,
+        0.55
+      ],
+      [
+        243.61,
+        0.35
+      ],
+      [
+        181.6,
+        0.14
+      ],
+      [
+        221.49,
+        0.98
+      ],
+      [
+        378.08,
+        0.8
+      ],
+      [
+        108.8,
+        0.66
+      ],
+      [
+        376.41,
+        0.74
+      ],
+      [
+        465.72,
+        0.72
+      ],
+      [
+        339.08,
+        0.44
+      ],
+      [
+        137.19,
+        0.56
+      ],
+      [
+        274.29,
+        0.24
+      ],
+      [
+        430.93,
+        0.75
+      ],
+      [
+        200.52,
+        0.33
+      ],
+      [
+        366.01,
+        0.54
+      ],
+      [
+        225.72,
+        0.08
+      ],
+      [
+        434.07,
+        0.56
+      ],
+      [
+        351.48,
+        0.43
+      ]
+    ],
+    [
+      [
+        119.8,
+        0.66
+      ],
+      [
+        102.62,
+        0.34
+      ],
+      [
+        156.73,
+        0.22
+      ],
+      [
+        204.18,
+        0.92
+      ],
+      [
+        203.52,
+        0.86
+      ],
+      [
+        202.21,
+        0.43
+      ],
+      [
+        109.63,
+        0.51
+      ],
+      [
+        372.95,
+        0.24
+      ],
+      [
+        217.97,
+        0.03
+      ],
+      [
+        319.94,
+        0.24
+      ],
+      [
+        204.92,
+        0.01
+      ],
+      [
+        378.96,
+        0.18
+      ],
+      [
+        380.54,
+        0.26
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        469.73,
+        0.15
+      ],
+      [
+        274.48,
+        0.63
+      ],
+      [
+        138.39,
+        0.97
+      ],
+      [
+        225.48,
+        0.38
+      ],
+      [
+        171.7,
+        0.1
+      ],
+      [
+        138.06,
+        0.92
+      ],
+      [
+        177.13,
+        0.47
+      ],
+      [
+        463.99,
+        0.98
+      ],
+      [
+        484.38,
+        0.23
+      ],
+      [
+        104.59,
+        0.15
+      ],
+      [
+        341.02,
+        0.37
+      ],
+      [
+        476.56,
+        0.7
+      ],
+      [
+        296.18,
+        0.54
+      ],
+      [
+        282.12,
+        0.63
+      ],
+      [
+        288.77,
+        0.16
+      ],
+      [
+        188.25,
+        0.5
+      ],
+      [
+        343.06,
+        0.37
+      ],
+      [
+        353.91,
+        0.5
+      ],
+      [
+        261.35,
+        0.19
+      ],
+      [
+        376.07,
+        0.87
+      ],
+      [
+        194.88,
+        0.94
+      ],
+      [
+        458.23,
+        0.85
+      ],
+      [
+        251.67,
+        0.94
+      ],
+      [
+        499.41,
+        0.97
+      ],
+      [
+        166.63,
+        0.41
+      ],
+      [
+        134.78,
+        0.28
+      ],
+      [
+        155.96,
+        0.36
+      ],
+      [
+        208.33,
+        0.76
+      ],
+      [
+        135.06,
+        0.37
+      ],
+      [
+        468.07,
+        0.12
+      ]
+    ],
+    [
+      [
+        136.43,
+        0.9
+      ],
+      [
+        396.44,
+        0.84
+      ],
+      [
+        376.11,
+        0.66
+      ],
+      [
+        112.95,
+        0.27
+      ],
+      [
+        165.61,
+        0.95
+      ],
+      [
+        257.87,
+        0.49
+      ],
+      [
+        498.52,
+        0.94
+      ],
+      [
+        408.93,
+        0.19
+      ],
+      [
+        160.23,
+        0.77
+      ],
+      [
+        168.5,
+        0.9
+      ],
+      [
+        134.81,
+        0.92
+      ],
+      [
+        300.18,
+        0.8
+      ],
+      [
+        314.45,
+        0.16
+      ],
+      [
+        450.67,
+        0.05
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        257.39,
+        0.89
+      ],
+      [
+        307.75,
+        0.7
+      ],
+      [
+        354.41,
+        0.41
+      ],
+      [
+        181.7,
+        0.89
+      ],
+      [
+        292.64,
+        0.77
+      ],
+      [
+        255.18,
+        0.22
+      ],
+      [
+        453.42,
+        0.62
+      ],
+      [
+        427.47,
+        0.08
+      ],
+      [
+        109.89,
+        0.85
+      ],
+      [
+        494.25,
+        0.63
+      ],
+      [
+        361.9,
+        0.14
+      ],
+      [
+        287.51,
+        0.15
+      ],
+      [
+        371.99,
+        0.97
+      ],
+      [
+        374.77,
+        0.85
+      ],
+      [
+        274.99,
+        0.26
+      ],
+      [
+        380.87,
+        0.57
+      ],
+      [
+        160.74,
+        0.13
+      ],
+      [
+        319.27,
+        0.52
+      ],
+      [
+        313.67,
+        0.61
+      ],
+      [
+        453.62,
+        0.73
+      ],
+      [
+        172.55,
+        0.08
+      ],
+      [
+        215.11,
+        0.32
+      ],
+      [
+        187.0,
+        0.6
+      ],
+      [
+        323.99,
+        0.88
+      ],
+      [
+        320.06,
+        0.66
+      ],
+      [
+        377.16,
+        0.32
+      ],
+      [
+        155.86,
+        0.55
+      ],
+      [
+        124.42,
+        0.11
+      ],
+      [
+        172.38,
+        0.38
+      ]
+    ],
+    [
+      [
+        409.0,
+        0.06
+      ],
+      [
+        274.79,
+        0.38
+      ],
+      [
+        449.17,
+        0.28
+      ],
+      [
+        342.45,
+        0.73
+      ],
+      [
+        338.67,
+        0.55
+      ],
+      [
+        368.4,
+        0.93
+      ],
+      [
+        178.21,
+        0.11
+      ],
+      [
+        213.15,
+        0.81
+      ],
+      [
+        226.27,
+        0.18
+      ],
+      [
+        269.17,
+        0.87
+      ],
+      [
+        240.23,
+        0.23
+      ],
+      [
+        111.81,
+        0.9
+      ],
+      [
+        247.23,
+        0.56
+      ],
+      [
+        140.32,
+        0.75
+      ],
+      [
+        190.47,
+        0.4
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        134.01,
+        0.35
+      ],
+      [
+        140.97,
+        0.24
+      ],
+      [
+        282.32,
+        0.27
+      ],
+      [
+        308.89,
+        0.81
+      ],
+      [
+        107.68,
+        0.5
+      ],
+      [
+        288.54,
+        0.31
+      ],
+      [
+        314.35,
+        0.99
+      ],
+      [
+        292.95,
+        0.5
+      ],
+      [
+        462.49,
+        0.43
+      ],
+      [
+        297.01,
+        0.68
+      ],
+      [
+        444.47,
+        0.18
+      ],
+      [
+        407.69,
+        0.34
+      ],
+      [
+        225.16,
+        0.73
+      ],
+      [
+        302.85,
+        0.83
+      ],
+      [
+        220.39,
+        0.0
+      ],
+      [
+        163.51,
+        0.75
+      ],
+      [
+        255.5,
+        0.69
+      ],
+      [
+        368.76,
+        0.4
+      ],
+      [
+        449.63,
+        0.12
+      ],
+      [
+        398.94,
+        0.7
+      ],
+      [
+        216.05,
+        0.29
+      ],
+      [
+        405.43,
+        0.68
+      ],
+      [
+        295.52,
+        0.21
+      ],
+      [
+        447.79,
+        0.15
+      ],
+      [
+        180.85,
+        0.3
+      ],
+      [
+        290.72,
+        0.24
+      ],
+      [
+        344.65,
+        0.2
+      ],
+      [
+        244.15,
+        0.71
+      ]
+    ],
+    [
+      [
+        276.75,
+        0.67
+      ],
+      [
+        329.86,
+        0.96
+      ],
+      [
+        413.47,
+        0.17
+      ],
+      [
+        217.34,
+        0.03
+      ],
+      [
+        433.05,
+        0.17
+      ],
+      [
+        288.52,
+        0.53
+      ],
+      [
+        125.6,
+        0.9
+      ],
+      [
+        203.01,
+        0.99
+      ],
+      [
+        223.79,
+        0.44
+      ],
+      [
+        458.8,
+        0.27
+      ],
+      [
+        348.37,
+        0.08
+      ],
+      [
+        324.06,
+        0.1
+      ],
+      [
+        262.58,
+        0.26
+      ],
+      [
+        248.43,
+        0.13
+      ],
+      [
+        339.48,
+        0.06
+      ],
+      [
+        188.48,
+        0.81
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        123.94,
+        0.84
+      ],
+      [
+        225.56,
+        0.75
+      ],
+      [
+        352.07,
+        0.27
+      ],
+      [
+        487.15,
+        0.09
+      ],
+      [
+        360.9,
+        0.84
+      ],
+      [
+        422.42,
+        0.11
+      ],
+      [
+        444.01,
+        0.15
+      ],
+      [
+        274.78,
+        0.75
+      ],
+      [
+        371.49,
+        0.81
+      ],
+      [
+        177.81,
+        0.43
+      ],
+      [
+        469.15,
+        0.85
+      ],
+      [
+        397.4,
+        0.36
+      ],
+      [
+        151.31,
+        0.3
+      ],
+      [
+        258.05,
+        0.36
+      ],
+      [
+        123.83,
+        0.72
+      ],
+      [
+        431.75,
+        0.34
+      ],
+      [
+        153.26,
+        0.21
+      ],
+      [
+        105.52,
+        0.37
+      ],
+      [
+        207.58,
+        0.01
+      ],
+      [
+        369.55,
+        0.16
+      ],
+      [
+        369.91,
+        0.98
+      ],
+      [
+        397.06,
+        0.7
+      ],
+      [
+        395.98,
+        0.69
+      ],
+      [
+        142.21,
+        0.25
+      ],
+      [
+        130.33,
+        0.24
+      ],
+      [
+        225.25,
+        0.32
+      ],
+      [
+        415.23,
+        0.36
+      ]
+    ],
+    [
+      [
+        343.44,
+        0.46
+      ],
+      [
+        463.85,
+        0.71
+      ],
+      [
+        282.9,
+        0.71
+      ],
+      [
+        295.16,
+        0.71
+      ],
+      [
+        423.37,
+        0.13
+      ],
+      [
+        204.48,
+        0.55
+      ],
+      [
+        393.35,
+        0.23
+      ],
+      [
+        387.58,
+        0.7
+      ],
+      [
+        309.66,
+        0.58
+      ],
+      [
+        441.2,
+        0.95
+      ],
+      [
+        251.32,
+        0.68
+      ],
+      [
+        278.88,
+        0.44
+      ],
+      [
+        160.1,
+        0.18
+      ],
+      [
+        387.13,
+        0.39
+      ],
+      [
+        459.0,
+        1.0
+      ],
+      [
+        499.98,
+        0.5
+      ],
+      [
+        236.03,
+        0.08
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        295.17,
+        0.77
+      ],
+      [
+        298.29,
+        0.66
+      ],
+      [
+        100.41,
+        0.32
+      ],
+      [
+        195.91,
+        0.57
+      ],
+      [
+        124.55,
+        0.75
+      ],
+      [
+        328.51,
+        0.27
+      ],
+      [
+        486.34,
+        0.61
+      ],
+      [
+        460.22,
+        0.33
+      ],
+      [
+        373.95,
+        0.29
+      ],
+      [
+        363.08,
+        0.78
+      ],
+      [
+        394.18,
+        0.59
+      ],
+      [
+        257.87,
+        0.61
+      ],
+      [
+        346.54,
+        0.06
+      ],
+      [
+        224.32,
+        0.68
+      ],
+      [
+        469.59,
+        0.72
+      ],
+      [
+        487.62,
+        0.59
+      ],
+      [
+        229.69,
+        0.38
+      ],
+      [
+        486.94,
+        0.05
+      ],
+      [
+        419.26,
+        0.9
+      ],
+      [
+        448.95,
+        0.38
+      ],
+      [
+        364.84,
+        0.22
+      ],
+      [
+        317.45,
+        0.26
+      ],
+      [
+        181.12,
+        0.65
+      ],
+      [
+        268.25,
+        0.88
+      ],
+      [
+        176.42,
+        0.98
+      ],
+      [
+        210.29,
+        0.06
+      ]
+    ],
+    [
+      [
+        361.17,
+        0.9
+      ],
+      [
+        441.47,
+        0.01
+      ],
+      [
+        483.19,
+        0.46
+      ],
+      [
+        240.41,
+        0.57
+      ],
+      [
+        156.26,
+        0.5
+      ],
+      [
+        473.4,
+        0.18
+      ],
+      [
+        169.38,
+        0.63
+      ],
+      [
+        278.96,
+        0.99
+      ],
+      [
+        451.73,
+        0.87
+      ],
+      [
+        300.2,
+        0.93
+      ],
+      [
+        228.61,
+        0.1
+      ],
+      [
+        428.86,
+        0.63
+      ],
+      [
+        106.77,
+        0.73
+      ],
+      [
+        332.47,
+        0.06
+      ],
+      [
+        498.18,
+        0.58
+      ],
+      [
+        325.93,
+        0.36
+      ],
+      [
+        255.46,
+        0.67
+      ],
+      [
+        459.71,
+        0.74
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        323.72,
+        0.36
+      ],
+      [
+        368.93,
+        0.73
+      ],
+      [
+        461.22,
+        0.24
+      ],
+      [
+        447.27,
+        0.36
+      ],
+      [
+        398.8,
+        0.38
+      ],
+      [
+        279.87,
+        0.19
+      ],
+      [
+        135.81,
+        0.15
+      ],
+      [
+        331.2,
+        0.23
+      ],
+      [
+        133.34,
+        0.67
+      ],
+      [
+        477.33,
+        0.05
+      ],
+      [
+        274.37,
+        0.14
+      ],
+      [
+        303.45,
+        0.53
+      ],
+      [
+        213.15,
+        0.35
+      ],
+      [
+        465.04,
+        0.2
+      ],
+      [
+        102.14,
+        0.97
+      ],
+      [
+        306.59,
+        0.42
+      ],
+      [
+        292.96,
+        0.09
+      ],
+      [
+        338.74,
+        0.59
+      ],
+      [
+        244.0,
+        0.39
+      ],
+      [
+        113.03,
+        0.67
+      ],
+      [
+        245.11,
+        0.55
+      ],
+      [
+        434.35,
+        0.47
+      ],
+      [
+        111.83,
+        0.87
+      ],
+      [
+        458.66,
+        0.78
+      ],
+      [
+        213.39,
+        0.92
+      ]
+    ],
+    [
+      [
+        444.43,
+        0.27
+      ],
+      [
+        125.12,
+        0.68
+      ],
+      [
+        418.58,
+        0.66
+      ],
+      [
+        424.12,
+        0.5
+      ],
+      [
+        120.86,
+        0.99
+      ],
+      [
+        369.82,
+        0.84
+      ],
+      [
+        153.48,
+        0.1
+      ],
+      [
+        299.27,
+        0.69
+      ],
+      [
+        269.86,
+        0.84
+      ],
+      [
+        336.28,
+        0.2
+      ],
+      [
+        466.33,
+        0.27
+      ],
+      [
+        101.62,
+        0.69
+      ],
+      [
+        151.47,
+        0.96
+      ],
+      [
+        317.53,
+        0.35
+      ],
+      [
+        306.72,
+        0.62
+      ],
+      [
+        138.49,
+        0.46
+      ],
+      [
+        479.73,
+        0.14
+      ],
+      [
+        108.4,
+        0.24
+      ],
+      [
+        456.78,
+        1.0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        298.05,
+        0.72
+      ],
+      [
+        201.03,
+        0.81
+      ],
+      [
+        413.57,
+        0.04
+      ],
+      [
+        162.14,
+        0.28
+      ],
+      [
+        499.86,
+        0.46
+      ],
+      [
+        476.77,
+        0.18
+      ],
+      [
+        251.0,
+        0.6
+      ],
+      [
+        485.68,
+        0.79
+      ],
+      [
+        373.25,
+        0.86
+      ],
+      [
+        292.13,
+        0.41
+      ],
+      [
+        142.47,
+        0.84
+      ],
+      [
+        382.86,
+        0.26
+      ],
+      [
+        128.08,
+        0.52
+      ],
+      [
+        280.53,
+        0.01
+      ],
+      [
+        212.93,
+        0.49
+      ],
+      [
+        101.72,
+        0.23
+      ],
+      [
+        456.09,
+        0.36
+      ],
+      [
+        419.19,
+        0.58
+      ],
+      [
+        256.0,
+        0.69
+      ],
+      [
+        120.73,
+        0.36
+      ],
+      [
+        363.54,
+        0.98
+      ],
+      [
+        412.69,
+        0.9
+      ],
+      [
+        498.51,
+        0.84
+      ],
+      [
+        486.92,
+        0.99
+      ]
+    ],
+    [
+      [
+        164.7,
+        1.0
+      ],
+      [
+        337.35,
+        0.03
+      ],
+      [
+        325.92,
+        0.47
+      ],
+      [
+        449.93,
+        0.58
+      ],
+      [
+        487.16,
+        0.0
+      ],
+      [
+        133.26,
+        0.88
+      ],
+      [
+        402.7,
+        0.09
+      ],
+      [
+        178.96,
+        0.92
+      ],
+      [
+        215.93,
+        0.56
+      ],
+      [
+        190.05,
+        0.08
+      ],
+      [
+        110.71,
+        0.93
+      ],
+      [
+        402.85,
+        0.54
+      ],
+      [
+        173.19,
+        0.82
+      ],
+      [
+        377.27,
+        0.17
+      ],
+      [
+        386.15,
+        0.12
+      ],
+      [
+        258.57,
+        0.71
+      ],
+      [
+        470.56,
+        0.11
+      ],
+      [
+        374.28,
+        0.84
+      ],
+      [
+        249.06,
+        0.73
+      ],
+      [
+        258.08,
+        0.06
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        430.14,
+        0.4
+      ],
+      [
+        237.99,
+        0.72
+      ],
+      [
+        300.41,
+        0.97
+      ],
+      [
+        227.44,
+        0.5
+      ],
+      [
+        401.11,
+        0.79
+      ],
+      [
+        259.38,
+        0.09
+      ],
+      [
+        497.28,
+        0.79
+      ],
+      [
+        190.16,
+        0.57
+      ],
+      [
+        175.44,
+        0.58
+      ],
+      [
+        329.77,
+        0.35
+      ],
+      [
+        277.22,
+        0.63
+      ],
+      [
+        213.31,
+        0.29
+      ],
+      [
+        260.16,
+        0.56
+      ],
+      [
+        447.37,
+        0.88
+      ],
+      [
+        279.24,
+        0.17
+      ],
+      [
+        109.11,
+        0.13
+      ],
+      [
+        480.61,
+        0.83
+      ],
+      [
+        363.26,
+        0.47
+      ],
+      [
+        332.44,
+        0.79
+      ],
+      [
+        266.83,
+        0.79
+      ],
+      [
+        386.2,
+        0.72
+      ],
+      [
+        483.01,
+        0.43
+      ],
+      [
+        161.23,
+        0.5
+      ]
+    ],
+    [
+      [
+        297.96,
+        0.81
+      ],
+      [
+        362.64,
+        0.59
+      ],
+      [
+        167.02,
+        0.45
+      ],
+      [
+        165.08,
+        0.45
+      ],
+      [
+        162.75,
+        0.1
+      ],
+      [
+        421.16,
+        0.94
+      ],
+      [
+        295.77,
+        0.34
+      ],
+      [
+        182.97,
+        0.66
+      ],
+      [
+        327.92,
+        0.48
+      ],
+      [
+        282.76,
+        0.77
+      ],
+      [
+        134.92,
+        0.11
+      ],
+      [
+        466.68,
+        0.56
+      ],
+      [
+        212.87,
+        0.73
+      ],
+      [
+        137.48,
+        0.38
+      ],
+      [
+        313.54,
+        0.66
+      ],
+      [
+        451.25,
+        0.16
+      ],
+      [
+        463.09,
+        0.04
+      ],
+      [
+        434.82,
+        0.48
+      ],
+      [
+        357.71,
+        0.44
+      ],
+      [
+        180.53,
+        0.96
+      ],
+      [
+        332.48,
+        0.38
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        471.48,
+        0.61
+      ],
+      [
+        361.57,
+        0.12
+      ],
+      [
+        197.47,
+        0.89
+      ],
+      [
+        304.62,
+        0.98
+      ],
+      [
+        384.15,
+        0.59
+      ],
+      [
+        164.5,
+        0.89
+      ],
+      [
+        329.05,
+        0.84
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        436.3,
+        0.06
+      ],
+      [
+        420.37,
+        0.2
+      ],
+      [
+        187.32,
+        0.41
+      ],
+      [
+        118.26,
+        0.79
+      ],
+      [
+        124.45,
+        0.77
+      ],
+      [
+        479.89,
+        0.55
+      ],
+      [
+        335.95,
+        0.82
+      ],
+      [
+        154.26,
+        0.53
+      ],
+      [
+        175.41,
+        0.65
+      ],
+      [
+        389.19,
+        0.38
+      ],
+      [
+        120.29,
+        0.95
+      ],
+      [
+        200.19,
+        0.78
+      ],
+      [
+        212.08,
+        0.3
+      ],
+      [
+        113.51,
+        0.16
+      ],
+      [
+        158.78,
+        0.25
+      ],
+      [
+        154.09,
+        0.87
+      ],
+      [
+        454.4,
+        0.12
+      ],
+      [
+        448.22,
+        0.11
+      ],
+      [
+        378.45,
+        0.92
+      ],
+      [
+        404.51,
+        0.66
+      ],
+      [
+        257.51,
+        0.15
+      ],
+      [
+        112.81,
+        0.49
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        452.52,
+        0.17
+      ],
+      [
+        158.61,
+        0.53
+      ],
+      [
+        149.1,
+        0.74
+      ],
+      [
+        313.86,
+        0.61
+      ],
+      [
+        496.26,
+        0.89
+      ],
+      [
+        476.24,
+        0.44
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        154.85,
+        0.54
+      ],
+      [
+        293.04,
+        0.6
+      ],
+      [
+        427.15,
+        0.32
+      ],
+      [
+        259.76,
+        0.06
+      ],
+      [
+        213.34,
+        0.25
+      ],
+      [
+        229.59,
+        0.33
+      ],
+      [
+        324.72,
+        0.07
+      ],
+      [
+        329.7,
+        0.44
+      ],
+      [
+        320.04,
+        0.88
+      ],
+      [
+        371.8,
+        0.97
+      ],
+      [
+        289.99,
+        0.02
+      ],
+      [
+        361.7,
+        0.31
+      ],
+      [
+        434.0,
+        0.36
+      ],
+      [
+        208.26,
+        0.62
+      ],
+      [
+        377.23,
+        0.5
+      ],
+      [
+        131.62,
+        0.31
+      ],
+      [
+        246.97,
+        0.48
+      ],
+      [
+        270.86,
+        0.06
+      ],
+      [
+        129.6,
+        0.71
+      ],
+      [
+        161.99,
+        0.16
+      ],
+      [
+        352.21,
+        0.86
+      ],
+      [
+        136.82,
+        0.03
+      ],
+      [
+        496.36,
+        0.6
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        180.97,
+        0.44
+      ],
+      [
+        417.2,
+        0.97
+      ],
+      [
+        415.66,
+        0.85
+      ],
+      [
+        247.53,
+        0.79
+      ],
+      [
+        337.09,
+        0.33
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        464.63,
+        0.3
+      ],
+      [
+        485.99,
+        0.07
+      ],
+      [
+        490.99,
+        0.16
+      ],
+      [
+        358.23,
+        0.88
+      ],
+      [
+        355.68,
+        0.08
+      ],
+      [
+        477.57,
+        0.44
+      ],
+      [
+        280.39,
+        0.99
+      ],
+      [
+        109.76,
+        1.0
+      ],
+      [
+        340.78,
+        0.24
+      ],
+      [
+        446.39,
+        0.72
+      ],
+      [
+        456.54,
+        0.79
+      ],
+      [
+        389.9,
+        0.79
+      ],
+      [
+        306.74,
+        0.47
+      ],
+      [
+        171.05,
+        0.36
+      ],
+      [
+        474.95,
+        0.86
+      ],
+      [
+        292.92,
+        1.0
+      ],
+      [
+        137.86,
+        0.3
+      ],
+      [
+        246.81,
+        0.1
+      ],
+      [
+        215.05,
+        0.27
+      ],
+      [
+        390.09,
+        0.61
+      ],
+      [
+        445.22,
+        0.28
+      ],
+      [
+        425.02,
+        0.57
+      ],
+      [
+        118.89,
+        0.42
+      ],
+      [
+        376.95,
+        0.34
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        133.69,
+        0.52
+      ],
+      [
+        108.82,
+        0.95
+      ],
+      [
+        403.71,
+        0.95
+      ],
+      [
+        360.9,
+        0.65
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        348.47,
+        0.67
+      ],
+      [
+        186.22,
+        0.24
+      ],
+      [
+        250.18,
+        0.97
+      ],
+      [
+        383.47,
+        0.69
+      ],
+      [
+        181.9,
+        0.15
+      ],
+      [
+        440.11,
+        0.65
+      ],
+      [
+        133.37,
+        0.69
+      ],
+      [
+        489.81,
+        0.36
+      ],
+      [
+        425.89,
+        0.88
+      ],
+      [
+        472.11,
+        0.02
+      ],
+      [
+        118.62,
+        0.52
+      ],
+      [
+        366.94,
+        0.16
+      ],
+      [
+        252.07,
+        0.52
+      ],
+      [
+        316.71,
+        0.07
+      ],
+      [
+        281.18,
+        0.69
+      ],
+      [
+        424.79,
+        0.41
+      ],
+      [
+        253.15,
+        0.66
+      ],
+      [
+        192.98,
+        0.71
+      ],
+      [
+        102.44,
+        0.41
+      ],
+      [
+        377.28,
+        0.81
+      ],
+      [
+        292.55,
+        0.97
+      ],
+      [
+        130.64,
+        0.06
+      ],
+      [
+        313.25,
+        0.81
+      ],
+      [
+        440.05,
+        0.55
+      ],
+      [
+        144.53,
+        0.17
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        100.18,
+        0.33
+      ],
+      [
+        379.69,
+        0.16
+      ],
+      [
+        313.41,
+        0.21
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        466.71,
+        0.75
+      ],
+      [
+        383.39,
+        0.22
+      ],
+      [
+        187.71,
+        0.04
+      ],
+      [
+        229.47,
+        0.39
+      ],
+      [
+        470.12,
+        0.16
+      ],
+      [
+        448.59,
+        0.29
+      ],
+      [
+        342.52,
+        0.02
+      ],
+      [
+        398.7,
+        0.76
+      ],
+      [
+        376.99,
+        0.51
+      ],
+      [
+        456.1,
+        0.67
+      ],
+      [
+        441.45,
+        0.66
+      ],
+      [
+        293.5,
+        0.8
+      ],
+      [
+        498.59,
+        0.35
+      ],
+      [
+        150.5,
+        0.12
+      ],
+      [
+        321.44,
+        0.71
+      ],
+      [
+        260.1,
+        0.9
+      ],
+      [
+        259.88,
+        0.47
+      ],
+      [
+        433.15,
+        0.87
+      ],
+      [
+        237.16,
+        0.42
+      ],
+      [
+        249.26,
+        0.27
+      ],
+      [
+        305.55,
+        0.07
+      ],
+      [
+        190.9,
+        0.72
+      ],
+      [
+        446.49,
+        0.78
+      ],
+      [
+        277.5,
+        0.02
+      ],
+      [
+        145.5,
+        0.46
+      ],
+      [
+        312.34,
+        0.95
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        219.96,
+        0.94
+      ],
+      [
+        141.48,
+        0.62
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        109.66,
+        0.84
+      ],
+      [
+        443.34,
+        0.85
+      ],
+      [
+        218.33,
+        0.72
+      ],
+      [
+        325.9,
+        0.6
+      ],
+      [
+        376.82,
+        0.34
+      ],
+      [
+        406.31,
+        0.94
+      ],
+      [
+        409.75,
+        0.2
+      ],
+      [
+        236.17,
+        0.86
+      ],
+      [
+        351.96,
+        0.58
+      ],
+      [
+        288.43,
+        0.76
+      ],
+      [
+        330.63,
+        0.14
+      ],
+      [
+        336.36,
+        0.03
+      ],
+      [
+        381.27,
+        0.18
+      ],
+      [
+        374.4,
+        0.04
+      ],
+      [
+        208.13,
+        0.29
+      ],
+      [
+        490.48,
+        0.63
+      ],
+      [
+        392.34,
+        0.47
+      ],
+      [
+        330.96,
+        0.68
+      ],
+      [
+        321.11,
+        0.33
+      ],
+      [
+        413.73,
+        0.21
+      ],
+      [
+        206.59,
+        0.95
+      ],
+      [
+        413.19,
+        0.45
+      ],
+      [
+        427.32,
+        0.32
+      ],
+      [
+        369.98,
+        0.56
+      ],
+      [
+        194.97,
+        0.59
+      ],
+      [
+        189.29,
+        0.28
+      ],
+      [
+        369.05,
+        0.72
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        415.42,
+        0.19
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        329.14,
+        0.58
+      ],
+      [
+        332.44,
+        0.73
+      ],
+      [
+        352.07,
+        0.11
+      ],
+      [
+        384.68,
+        0.86
+      ],
+      [
+        116.99,
+        0.75
+      ],
+      [
+        280.09,
+        0.85
+      ],
+      [
+        490.14,
+        0.39
+      ],
+      [
+        160.06,
+        0.51
+      ],
+      [
+        461.11,
+        0.22
+      ],
+      [
+        382.69,
+        0.1
+      ],
+      [
+        439.6,
+        0.3
+      ],
+      [
+        102.71,
+        0.5
+      ],
+      [
+        247.66,
+        0.34
+      ],
+      [
+        254.03,
+        0.16
+      ],
+      [
+        263.85,
+        0.05
+      ],
+      [
+        255.03,
+        0.1
+      ],
+      [
+        241.75,
+        0.58
+      ],
+      [
+        381.89,
+        0.06
+      ],
+      [
+        239.46,
+        0.77
+      ],
+      [
+        112.42,
+        0.78
+      ],
+      [
+        232.97,
+        0.77
+      ],
+      [
+        355.13,
+        0.38
+      ],
+      [
+        220.98,
+        0.28
+      ],
+      [
+        361.44,
+        0.41
+      ],
+      [
+        155.17,
+        0.86
+      ],
+      [
+        350.29,
+        0.29
+      ],
+      [
+        173.2,
+        0.67
+      ],
+      [
+        432.54,
+        0.2
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        100.4,
+        0.09
+      ],
+      [
+        491.67,
+        0.77
+      ],
+      [
+        453.99,
+        0.79
+      ],
+      [
+        473.47,
+        0.35
+      ],
+      [
+        474.91,
+        0.81
+      ],
+      [
+        174.39,
+        0.7
+      ],
+      [
+        235.51,
+        0.04
+      ],
+      [
+        420.79,
+        0.88
+      ],
+      [
+        157.98,
+        0.69
+      ],
+      [
+        353.45,
+        0.79
+      ],
+      [
+        475.24,
+        0.52
+      ],
+      [
+        178.5,
+        0.68
+      ],
+      [
+        293.7,
+        0.25
+      ],
+      [
+        409.94,
+        0.36
+      ],
+      [
+        139.93,
+        0.93
+      ],
+      [
+        229.4,
+        0.17
+      ],
+      [
+        330.43,
+        0.08
+      ],
+      [
+        243.33,
+        0.65
+      ],
+      [
+        332.87,
+        0.05
+      ],
+      [
+        201.3,
+        0.96
+      ],
+      [
+        133.74,
+        0.24
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        179.51,
+        0.1
+      ],
+      [
+        182.81,
+        0.35
+      ],
+      [
+        373.71,
+        0.25
+      ],
+      [
+        358.04,
+        0.43
+      ],
+      [
+        255.98,
+        0.28
+      ],
+      [
+        200.99,
+        0.73
+      ],
+      [
+        359.16,
+        0.76
+      ],
+      [
+        407.61,
+        0.72
+      ],
+      [
+        259.32,
+        0.32
+      ],
+      [
+        266.81,
+        0.85
+      ],
+      [
+        498.56,
+        0.81
+      ],
+      [
+        112.62,
+        0.36
+      ],
+      [
+        303.56,
+        0.74
+      ],
+      [
+        451.44,
+        0.77
+      ],
+      [
+        255.98,
+        0.11
+      ],
+      [
+        230.72,
+        0.98
+      ],
+      [
+        369.69,
+        0.78
+      ],
+      [
+        310.9,
+        0.45
+      ],
+      [
+        460.4,
+        0.08
+      ],
+      [
+        469.73,
+        0.75
+      ],
+      [
+        381.5,
+        0.84
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        381.23,
+        0.86
+      ],
+      [
+        419.48,
+        0.44
+      ],
+      [
+        140.47,
+        0.55
+      ],
+      [
+        301.42,
+        0.55
+      ],
+      [
+        319.29,
+        0.55
+      ],
+      [
+        326.55,
+        0.68
+      ],
+      [
+        243.3,
+        0.98
+      ],
+      [
+        371.79,
+        0.08
+      ],
+      [
+        278.65,
+        0.85
+      ],
+      [
+        303.41,
+        0.03
+      ],
+      [
+        134.79,
+        0.25
+      ],
+      [
+        362.82,
+        0.52
+      ],
+      [
+        415.26,
+        0.34
+      ],
+      [
+        156.97,
+        0.53
+      ],
+      [
+        220.99,
+        0.2
+      ],
+      [
+        452.7,
+        0.49
+      ],
+      [
+        431.42,
+        0.95
+      ],
+      [
+        259.16,
+        0.05
+      ],
+      [
+        397.12,
+        0.68
+      ],
+      [
+        358.01,
+        0.31
+      ],
+      [
+        461.24,
+        0.09
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        234.31,
+        0.99
+      ],
+      [
+        383.18,
+        0.57
+      ],
+      [
+        156.01,
+        0.56
+      ],
+      [
+        215.14,
+        0.83
+      ],
+      [
+        466.62,
+        0.49
+      ],
+      [
+        273.4,
+        0.04
+      ],
+      [
+        131.96,
+        0.27
+      ],
+      [
+        340.61,
+        0.49
+      ],
+      [
+        349.36,
+        0.05
+      ],
+      [
+        327.3,
+        0.31
+      ],
+      [
+        267.13,
+        0.47
+      ],
+      [
+        300.07,
+        0.7
+      ],
+      [
+        305.08,
+        0.32
+      ],
+      [
+        403.69,
+        0.86
+      ],
+      [
+        145.1,
+        0.92
+      ],
+      [
+        383.08,
+        0.4
+      ],
+      [
+        339.81,
+        0.09
+      ],
+      [
+        457.18,
+        0.43
+      ],
+      [
+        132.39,
+        0.52
+      ],
+      [
+        374.36,
+        0.33
+      ],
+      [
+        129.88,
+        0.66
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        348.06,
+        0.4
+      ],
+      [
+        365.57,
+        0.53
+      ],
+      [
+        106.4,
+        0.14
+      ],
+      [
+        276.11,
+        0.5
+      ],
+      [
+        188.54,
+        0.34
+      ],
+      [
+        120.21,
+        0.11
+      ],
+      [
+        261.31,
+        0.8
+      ],
+      [
+        223.21,
+        0.44
+      ],
+      [
+        385.29,
+        0.04
+      ],
+      [
+        103.57,
+        0.74
+      ],
+      [
+        422.42,
+        0.83
+      ],
+      [
+        134.39,
+        0.46
+      ],
+      [
+        241.03,
+        0.38
+      ],
+      [
+        144.66,
+        0.45
+      ],
+      [
+        491.61,
+        0.73
+      ],
+      [
+        415.59,
+        0.87
+      ],
+      [
+        153.94,
+        0.01
+      ],
+      [
+        477.89,
+        0.39
+      ],
+      [
+        235.06,
+        0.11
+      ],
+      [
+        265.61,
+        0.64
+      ],
+      [
+        450.0,
+        0.29
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        197.57,
+        0.02
+      ],
+      [
+        252.91,
+        0.05
+      ],
+      [
+        252.06,
+        0.58
+      ],
+      [
+        458.19,
+        0.73
+      ],
+      [
+        326.6,
+        0.91
+      ],
+      [
+        215.3,
+        0.64
+      ],
+      [
+        364.63,
+        1.0
+      ],
+      [
+        126.33,
+        0.49
+      ],
+      [
+        296.68,
+        0.14
+      ],
+      [
+        236.16,
+        0.67
+      ],
+      [
+        448.08,
+        0.33
+      ],
+      [
+        414.03,
+        0.73
+      ],
+      [
+        328.01,
+        0.52
+      ],
+      [
+        451.89,
+        0.82
+      ],
+      [
+        305.48,
+        0.81
+      ],
+      [
+        159.21,
+        0.93
+      ],
+      [
+        266.37,
+        0.29
+      ],
+      [
+        451.95,
+        0.63
+      ],
+      [
+        185.37,
+        0.12
+      ],
+      [
+        472.84,
+        0.3
+      ],
+      [
+        102.1,
+        0.01
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        366.67,
+        0.29
+      ],
+      [
+        480.3,
+        0.72
+      ],
+      [
+        286.54,
+        0.71
+      ],
+      [
+        198.77,
+        0.56
+      ],
+      [
+        369.51,
+        0.88
+      ],
+      [
+        155.27,
+        0.57
+      ],
+      [
+        163.51,
+        0.76
+      ],
+      [
+        268.22,
+        0.63
+      ],
+      [
+        365.69,
+        0.42
+      ],
+      [
+        391.45,
+        0.75
+      ],
+      [
+        218.15,
+        0.82
+      ],
+      [
+        145.23,
+        0.29
+      ],
+      [
+        185.53,
+        0.74
+      ],
+      [
+        405.65,
+        0.93
+      ],
+      [
+        317.22,
+        0.93
+      ],
+      [
+        376.88,
+        0.47
+      ],
+      [
+        317.52,
+        0.54
+      ],
+      [
+        418.53,
+        0.91
+      ],
+      [
+        251.14,
+        0.28
+      ],
+      [
+        198.44,
+        0.74
+      ],
+      [
+        330.07,
+        0.02
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        237.8,
+        0.24
+      ],
+      [
+        125.52,
+        0.88
+      ],
+      [
+        193.73,
+        0.08
+      ],
+      [
+        177.57,
+        0.86
+      ],
+      [
+        304.47,
+        0.93
+      ],
+      [
+        113.42,
+        0.46
+      ],
+      [
+        406.51,
+        0.11
+      ],
+      [
+        225.37,
+        0.31
+      ],
+      [
+        197.83,
+        0.5
+      ],
+      [
+        358.67,
+        0.57
+      ],
+      [
+        174.08,
+        0.53
+      ],
+      [
+        231.08,
+        0.12
+      ],
+      [
+        473.11,
+        0.97
+      ],
+      [
+        266.36,
+        0.4
+      ],
+      [
+        357.84,
+        0.5
+      ],
+      [
+        378.49,
+        0.54
+      ],
+      [
+        124.48,
+        0.17
+      ],
+      [
+        328.62,
+        0.03
+      ],
+      [
+        237.82,
+        0.53
+      ],
+      [
+        496.55,
+        0.37
+      ],
+      [
+        254.16,
+        0.03
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        213.11,
+        0.19
+      ],
+      [
+        256.35,
+        0.32
+      ],
+      [
+        176.84,
+        0.9
+      ],
+      [
+        267.19,
+        0.79
+      ],
+      [
+        383.96,
+        0.21
+      ],
+      [
+        395.12,
+        1.0
+      ],
+      [
+        208.89,
+        0.95
+      ],
+      [
+        281.5,
+        0.76
+      ],
+      [
+        256.33,
+        0.63
+      ],
+      [
+        342.2,
+        0.44
+      ],
+      [
+        130.84,
+        0.58
+      ],
+      [
+        132.33,
+        0.02
+      ],
+      [
+        417.06,
+        0.98
+      ],
+      [
+        477.19,
+        0.1
+      ],
+      [
+        120.66,
+        0.02
+      ],
+      [
+        408.73,
+        0.26
+      ],
+      [
+        204.97,
+        0.21
+      ],
+      [
+        196.21,
+        0.31
+      ],
+      [
+        333.05,
+        0.73
+      ],
+      [
+        320.6,
+        0.8
+      ],
+      [
+        186.77,
+        0.95
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        298.33,
+        0.74
+      ],
+      [
+        141.14,
+        0.92
+      ],
+      [
+        291.11,
+        0.76
+      ],
+      [
+        411.45,
+        0.28
+      ],
+      [
+        372.35,
+        0.47
+      ],
+      [
+        139.53,
+        0.17
+      ],
+      [
+        251.84,
+        0.61
+      ],
+      [
+        405.84,
+        0.57
+      ],
+      [
+        407.51,
+        0.55
+      ],
+      [
+        169.27,
+        0.99
+      ],
+      [
+        293.54,
+        0.52
+      ],
+      [
+        226.62,
+        0.61
+      ],
+      [
+        125.93,
+        0.59
+      ],
+      [
+        258.91,
+        0.51
+      ],
+      [
+        216.9,
+        0.01
+      ],
+      [
+        205.71,
+        0.42
+      ],
+      [
+        488.61,
+        0.32
+      ],
+      [
+        423.75,
+        0.59
+      ],
+      [
+        370.25,
+        0.46
+      ],
+      [
+        392.96,
+        0.21
+      ],
+      [
+        423.96,
+        0.61
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        171.09,
+        0.08
+      ],
+      [
+        449.88,
+        0.34
+      ],
+      [
+        459.86,
+        0.58
+      ],
+      [
+        291.76,
+        0.43
+      ],
+      [
+        404.88,
+        0.01
+      ],
+      [
+        294.37,
+        0.12
+      ],
+      [
+        136.54,
+        0.35
+      ],
+      [
+        232.41,
+        0.16
+      ],
+      [
+        124.73,
+        0.71
+      ],
+      [
+        346.66,
+        0.39
+      ],
+      [
+        186.41,
+        0.78
+      ],
+      [
+        371.94,
+        0.16
+      ],
+      [
+        160.43,
+        0.59
+      ],
+      [
+        205.77,
+        0.31
+      ],
+      [
+        338.01,
+        0.73
+      ],
+      [
+        388.97,
+        0.8
+      ],
+      [
+        359.87,
+        0.01
+      ],
+      [
+        367.74,
+        0.13
+      ],
+      [
+        470.74,
+        0.82
+      ],
+      [
+        185.32,
+        0.93
+      ],
+      [
+        483.55,
+        0.37
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        419.89,
+        0.02
+      ],
+      [
+        310.27,
+        0.4
+      ],
+      [
+        388.72,
+        0.16
+      ],
+      [
+        144.07,
+        0.66
+      ],
+      [
+        309.11,
+        0.33
+      ],
+      [
+        331.29,
+        0.55
+      ],
+      [
+        449.74,
+        0.44
+      ],
+      [
+        355.77,
+        0.42
+      ],
+      [
+        471.63,
+        0.9
+      ],
+      [
+        212.74,
+        0.29
+      ],
+      [
+        341.65,
+        0.33
+      ],
+      [
+        155.32,
+        0.45
+      ],
+      [
+        385.52,
+        0.73
+      ],
+      [
+        374.56,
+        0.69
+      ],
+      [
+        321.77,
+        0.07
+      ],
+      [
+        250.02,
+        0.55
+      ],
+      [
+        481.45,
+        0.87
+      ],
+      [
+        396.87,
+        0.32
+      ],
+      [
+        229.82,
+        0.38
+      ],
+      [
+        115.11,
+        0.91
+      ],
+      [
+        167.47,
+        0.9
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        252.73,
+        0.06
+      ],
+      [
+        179.81,
+        0.69
+      ],
+      [
+        443.09,
+        0.34
+      ],
+      [
+        250.6,
+        0.75
+      ],
+      [
+        227.24,
+        0.56
+      ],
+      [
+        415.23,
+        0.2
+      ],
+      [
+        147.22,
+        0.99
+      ],
+      [
+        145.62,
+        0.65
+      ],
+      [
+        370.21,
+        0.35
+      ],
+      [
+        387.46,
+        0.24
+      ],
+      [
+        365.81,
+        0.72
+      ],
+      [
+        224.57,
+        0.3
+      ],
+      [
+        442.71,
+        0.5
+      ],
+      [
+        493.64,
+        0.05
+      ],
+      [
+        252.23,
+        0.81
+      ],
+      [
+        420.8,
+        0.6
+      ],
+      [
+        452.83,
+        0.97
+      ],
+      [
+        285.29,
+        0.59
+      ],
+      [
+        326.01,
+        0.2
+      ],
+      [
+        226.28,
+        0.36
+      ],
+      [
+        465.28,
+        0.82
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        432.92,
+        0.58
+      ],
+      [
+        304.59,
+        0.28
+      ],
+      [
+        495.59,
+        0.39
+      ],
+      [
+        296.09,
+        0.05
+      ],
+      [
+        333.89,
+        0.17
+      ],
+      [
+        363.46,
+        0.03
+      ],
+      [
+        167.62,
+        0.92
+      ],
+      [
+        204.85,
+        0.15
+      ],
+      [
+        288.15,
+        0.79
+      ],
+      [
+        356.15,
+        0.87
+      ],
+      [
+        470.1,
+        0.09
+      ],
+      [
+        247.72,
+        0.15
+      ],
+      [
+        417.06,
+        0.93
+      ],
+      [
+        119.25,
+        0.13
+      ],
+      [
+        178.33,
+        0.74
+      ],
+      [
+        256.93,
+        0.91
+      ],
+      [
+        374.19,
+        0.3
+      ],
+      [
+        360.08,
+        0.18
+      ],
+      [
+        293.49,
+        0.21
+      ],
+      [
+        245.46,
+        0.53
+      ],
+      [
+        223.73,
+        0.68
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        399.31,
+        0.96
+      ],
+      [
+        196.93,
+        0.78
+      ],
+      [
+        106.08,
+        0.23
+      ],
+      [
+        117.8,
+        0.95
+      ],
+      [
+        185.08,
+        0.54
+      ],
+      [
+        299.72,
+        0.85
+      ],
+      [
+        307.21,
+        0.34
+      ],
+      [
+        471.04,
+        0.32
+      ],
+      [
+        239.19,
+        0.94
+      ],
+      [
+        202.29,
+        0.76
+      ],
+      [
+        209.94,
+        0.08
+      ],
+      [
+        250.91,
+        0.57
+      ],
+      [
+        329.12,
+        0.22
+      ],
+      [
+        498.0,
+        0.05
+      ],
+      [
+        301.2,
+        0.34
+      ],
+      [
+        351.07,
+        0.06
+      ],
+      [
+        457.08,
+        0.22
+      ],
+      [
+        453.2,
+        0.45
+      ],
+      [
+        289.31,
+        0.41
+      ],
+      [
+        221.88,
+        0.24
+      ],
+      [
+        226.61,
+        0.19
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  ],
+  "results": {
+    "algorithm": "TCA",
+    "totalResponseTime": 0.8927,
+    "aveResponseTime": 0.1785,
+    "platformReliability": 1,
+    "serviceReliability": 1,
+    "infrastructureMemoryEntropy": 2.5628,
+    "infrastructureCPUEntropy": 2.3998,
+    "algorithmRuntime": 0.3228,
+    "responseTimePerService": {
+      "resTimePerService": {
+        "service1": 0.192,
+        "service2": 0.124,
+        "service3": 0.1345,
+        "service4": 0.28,
+        "service5": 0.1622
+      },
+      "platReliability": {
+        "service1": 1,
+        "service2": 1,
+        "service3": 1,
+        "service4": 1,
+        "service5": 1
+      },
+      "servReliability": {
+        "service1": 1,
+        "service2": 1,
+        "service3": 1,
+        "service4": 1,
+        "service5": 1
+      }
+    },
+    "finalSolution": [
+      {
+        "serviceID": 1,
+        "componentID": 1,
+        "versionID": 1,
+        "nodeID": 10
+      },
+      {
+        "serviceID": 1,
+        "componentID": 2,
+        "versionID": 1,
+        "nodeID": 1
+      },
+      {
+        "serviceID": 1,
+        "componentID": 3,
+        "versionID": 1,
+        "nodeID": 10
+      },
+      {
+        "serviceID": 1,
+        "componentID": 4,
+        "versionID": 1,
+        "nodeID": 1
+      },
+      {
+        "serviceID": 1,
+        "componentID": 5,
+        "versionID": 1,
+        "nodeID": 1
+      },
+      {
+        "serviceID": 1,
+        "componentID": 6,
+        "versionID": 1,
+        "nodeID": 7
+      },
+      {
+        "serviceID": 2,
+        "componentID": 1,
+        "versionID": 1,
+        "nodeID": 11
+      },
+      {
+        "serviceID": 2,
+        "componentID": 2,
+        "versionID": 1,
+        "nodeID": 2
+      },
+      {
+        "serviceID": 2,
+        "componentID": 3,
+        "versionID": 1,
+        "nodeID": 2
+      },
+      {
+        "serviceID": 2,
+        "componentID": 4,
+        "versionID": 1,
+        "nodeID": 3
+      },
+      {
+        "serviceID": 2,
+        "componentID": 5,
+        "versionID": 1,
+        "nodeID": 3
+      },
+      {
+        "serviceID": 2,
+        "componentID": 6,
+        "versionID": 1,
+        "nodeID": 8
+      },
+      {
+        "serviceID": 3,
+        "componentID": 1,
+        "versionID": 1,
+        "nodeID": 12
+      },
+      {
+        "serviceID": 3,
+        "componentID": 2,
+        "versionID": 1,
+        "nodeID": 4
+      },
+      {
+        "serviceID": 3,
+        "componentID": 3,
+        "versionID": 1,
+        "nodeID": 4
+      },
+      {
+        "serviceID": 3,
+        "componentID": 4,
+        "versionID": 1,
+        "nodeID": 3
+      },
+      {
+        "serviceID": 3,
+        "componentID": 5,
+        "versionID": 1,
+        "nodeID": 4
+      },
+      {
+        "serviceID": 3,
+        "componentID": 6,
+        "versionID": 1,
+        "nodeID": 9
+      },
+      {
+        "serviceID": 4,
+        "componentID": 1,
+        "versionID": 1,
+        "nodeID": 13
+      },
+      {
+        "serviceID": 4,
+        "componentID": 2,
+        "versionID": 1,
+        "nodeID": 4
+      },
+      {
+        "serviceID": 4,
+        "componentID": 3,
+        "versionID": 1,
+        "nodeID": 13
+      },
+      {
+        "serviceID": 4,
+        "componentID": 4,
+        "versionID": 1,
+        "nodeID": 4
+      },
+      {
+        "serviceID": 4,
+        "componentID": 5,
+        "versionID": 1,
+        "nodeID": 4
+      },
+      {
+        "serviceID": 4,
+        "componentID": 6,
+        "versionID": 1,
+        "nodeID": 7
+      },
+      {
+        "serviceID": 5,
+        "componentID": 1,
+        "versionID": 1,
+        "nodeID": 14
+      },
+      {
+        "serviceID": 5,
+        "componentID": 2,
+        "versionID": 1,
+        "nodeID": 5
+      },
+      {
+        "serviceID": 5,
+        "componentID": 3,
+        "versionID": 1,
+        "nodeID": 5
+      },
+      {
+        "serviceID": 5,
+        "componentID": 4,
+        "versionID": 1,
+        "nodeID": 5
+      },
+      {
+        "serviceID": 5,
+        "componentID": 5,
+        "versionID": 1,
+        "nodeID": 5
+      },
+      {
+        "serviceID": 5,
+        "componentID": 6,
+        "versionID": 1,
+        "nodeID": 8
+      }
+    ]
+  }
+}
