@@ -1,178 +1,235 @@
+import torch
 import json
 import os
-import torch
-from typing import List, Tuple
+import yaml
+import copy
+
+# Load configuration from YAML file
+config_path = "configs/config.yaml"
+with open(config_path, "r") as f:
+    config = yaml.safe_load(f)
+
+# Extract configuration parameters
+num_epochs = config["model"]["num_epochs"]
+num_samples = config["model"]["num_samples"]
+num_layers = config["model"]["num_layers"]
+hidden_dim = config["model"]["hidden_dim"]
+cpu_hidden_dim = config["model"]["cpu_hidden_dim"]
+device = config["model"]["device"]
+charnum_s = config["model"]["charnum_s"]
+charnum_n = config["model"]["charnum_n"]
+charnum_se = config["model"]["charnum_se"]
+charnum_ne = config["model"]["charnum_ne"]
+
+# Determine device and set dim accordingly
+if device == "auto":
+    if torch.cuda.is_available():
+        device = "cuda"
+        dim = hidden_dim
+    else:
+        device = "cpu"
+        dim = cpu_hidden_dim
+else:
+    device = device.lower()
+    dim = hidden_dim if device == "cuda" else cpu_hidden_dim
 
 
-def sigmoid(x):
-    return torch.sigmoid(x)
-
-
-def relu(x):
-    return torch.relu(x)
-
-
-def normalize_vector(v, min_val=0.1, max_val=1.0):
-    v_min, v_max = torch.min(v), torch.max(v)
-    if v_max == v_min:
-        return torch.full_like(v, min_val)
-    return min_val + (max_val - min_val) * (v - v_min) / (v_max - v_min)
-
-
-def msg_component_processing(input_pairs: List[Tuple[str, str]], output_prefixes: List[str]):
+def AR_model(
+    services,
+    dag,
+    nodes,
+    connectivity,
+    emc,
+    Cedge,
+    ems,
+    Sedge,
+    parameters,
+    device="cpu",
+    settings_path="configs/setting.json",
+):
     """
-    Process multiple input file pairs and generate corresponding outputs.
+    AR model to assign service components to nodes in parallel using embeddings.
 
     Args:
-        input_pairs: List of tuples, each containing (services_file, connections_file)
-        output_prefixes: List of prefixes for output files (e.g., ['output1', 'output2'])
+        services (list): List of microservice data.
+        dag (list): List of componentConnections matrices.
+        nodes (list): List of computing nodes data.
+        connectivity (list): List of infraConnections matrices.
+        emc (list): Microservices embeddings.
+        Cedge (list): Microservices edges embeddings.
+        ems (list): Computing nodes embeddings.
+        Sedge (list): Computing nodes edges embeddings.
+        parameters (dict): Parameters (WSQ, WNK).
+        device (str): Device to run computations ('cuda' or 'cpu').
+        settings_path (str): Path to save settings.json.
+
+    Returns:
+        tuple: (placement, updated_parameters)
     """
-    if len(input_pairs) != len(output_prefixes):
-        raise ValueError("Number of input pairs must match number of output prefixes")
+    # Move parameters to device
+    parameters = {k: v.to(device) for k, v in parameters.items()}
+    WSQ, WNK = parameters["WSQ"], parameters["WNK"]
 
-    for idx, ((services_file, connections_file), output_prefix) in enumerate(zip(input_pairs, output_prefixes)):
-        print(f"\nProcessing input pair {idx + 1}/{len(input_pairs)}")
-        print(f"Step 1: Reading and normalizing {services_file}")
+    # Initialize output
+    placement = {}
 
-        # Read services file
-        with open(services_file, "r", encoding="utf-8") as f:
-            component_data = json.load(f)
-        print(f"  - Number of services: {len(component_data)}")
+    # Prepare node embeddings (KS) and normalize
+    node_embeddings = []
+    for node_dict in ems:
+        for node_name, embedding in node_dict.items():
+            node_embeddings.append(embedding)
+    if not node_embeddings:
+        print("Warning: No node embeddings provided.")
+        return placement, parameters
+    KS = (
+        torch.tensor(node_embeddings, dtype=torch.float32, device=device) @ WNK
+    )  # Shape: (num_nodes, 128)
+    KS = (KS - torch.min(KS, dim=1, keepdim=True)[0]) / (
+        torch.max(KS, dim=1, keepdim=True)[0]
+        - torch.min(KS, dim=1, keepdim=True)[0]
+        + 1e-10
+    )
+    num_nodes = KS.shape[0]
 
-        app_h_C_final = {}
-        app_e_C_final = {}
+    # Convert connectivity to tensor
+    connectivity_matrix = torch.tensor(
+        connectivity[0], dtype=torch.float32, device=device
+    )[
+        :, :, 0
+    ]  # Shape: (num_nodes, num_nodes)
 
-        for service in component_data:
-            service_name = f"Service{service['serviceID']}"
-            components = service["components"]
-            user_id = service["userID"]
-            helper_id = service["helperID"]
-            print(f"\nProcessing Service: {service_name} (User: {user_id}, Helper: {helper_id})")
-            num_components = len(components)
-            print(f"  - Number of components: {num_components}")
+    # Store initial node resources
+    initial_resources = {
+        str(node["nodeID"]): {
+            "cpu": node["characteristics"]["cpu"],
+            "memory": node["characteristics"]["memory"],
+            "disk": node["characteristics"]["disk"],
+        }
+        for node in nodes[0]
+    }
+    S = copy.deepcopy(initial_resources)
 
-            # Build feature vector
-            component_vectors = torch.tensor([[c["cpu"], c["memory"], c["dataSize"], c["disk"], c["reliabilityScore"]]
-                                              for c in components], dtype=torch.float32)
-            norm_components = torch.stack([normalize_vector(component_vectors[:, i])
-                                           for i in range(component_vectors.shape[1])]).T
+    # Collect all components across services
+    all_components = []
+    component_specs = []
+    component_ids = []
+    for z, (service_id, service_components) in enumerate(emc[0].items(), 1):
+        print(f"\nProcessing Service {z}: {service_id}")
+        service_number = service_id.replace("Service", "")
+        service = next(
+            (
+                s
+                for s in services[0].get("services", [])
+                if str(s.get("serviceID", "")) == service_number
+            ),
+            None,
+        )
+        if not service:
+            print(f"Warning: No service found for ID {service_number}, skipping.")
+            continue
 
-            # Compute h_C_0
-            WC = torch.rand(5, 128) * 2 - 1
-            h_C_layers = [norm_components @ WC]
+        for i, hc_i in enumerate(service_components, 1):
+            component_id = f"S{service_number}_C{i}"
+            all_components.append(hc_i)
+            component_specs.append(service["components"][i - 1]["characteristics"])
+            component_ids.append(component_id)
 
-            # Load dependencies
-            with open(connections_file, "r", encoding="utf-8") as f:
-                dependency_data = json.load(f)
-            app_deps = dependency_data.get(service_name, {})
-            dep_values = torch.tensor([val for val in app_deps.values() if val > 0],
-                                      dtype=torch.float32)
-            norm_deps = normalize_vector(dep_values) if len(dep_values) > 0 else torch.zeros(1)
+    if not all_components:
+        print("Warning: No components to process.")
+        return placement, parameters
 
-            WEC = torch.rand(128) * 2 - 1
-            e_C_dict = {}
-            idx_dep = 0
-            for edge_key, val in app_deps.items():
-                if val > 0:
-                    e_C_dict[edge_key] = norm_deps[idx_dep] * WEC
-                    idx_dep += 1
-            sigmoid_e_C = {key: sigmoid(val) for key, val in e_C_dict.items()}
+    # Compute qc for all components in parallel
+    qc = (
+        torch.tensor(all_components, dtype=torch.float32, device=device) @ WSQ
+    )  # Shape: (num_components, 128)
+    qc = (qc - torch.min(qc, dim=1, keepdim=True)[0]) / (
+        torch.max(qc, dim=1, keepdim=True)[0]
+        - torch.min(qc, dim=1, keepdim=True)[0]
+        + 1e-10
+    )
 
-            MC = torch.rand(128, 128) * 2 - 1
-            NC = torch.rand(128, 128) * 2 - 1
+    # Compute compatibility scores (u) for all components and nodes
+    u = qc @ KS.T  # Shape: (num_components, num_nodes)
 
-            # Component messaging
-            for layer in range(num_components - 1):
-                h_C_current = h_C_layers[layer]
-                MC_h_C = h_C_current @ MC
-                NC_h_C = h_C_current @ NC
-                h_C_next = h_C_current.clone()
+    # Adjust scores with connectivity
+    connectivity_factor = torch.mean(connectivity_matrix, dim=1)  # Shape: (num_nodes,)
+    u *= (1 + connectivity_factor).unsqueeze(
+        0
+    )  # Broadcast: (num_components, num_nodes)
 
-                for i in range(num_components):
-                    neighbors = set()
-                    for edge_key in e_C_dict.keys():
-                        c1, c2 = map(int, edge_key.split('_c')[1:])
-                        if c1 == i + 1:
-                            neighbors.add(c2 - 1)
-                        elif c2 == i + 1:
-                            neighbors.add(c1 - 1)
-                    neighbors = list(neighbors)
+    # Check resource constraints in parallel
+    resource_mask = torch.ones_like(
+        u, device=device
+    )  # Shape: (num_components, num_nodes)
+    for j in range(num_nodes):
+        node_key = str(nodes[0][j]["nodeID"])
+        for i, specs in enumerate(component_specs):
+            if (
+                S[node_key]["cpu"] < specs["cpu"]
+                or S[node_key]["memory"] < specs["memory"]
+                or S[node_key]["disk"] < specs["disk"]
+            ):
+                resource_mask[i, j] = float("-inf")
 
-                    neighbor_sum = torch.zeros(128)
-                    for j in neighbors:
-                        edge_key = f"e_c{i + 1}_c{j + 1}" if i < j else f"e_c{j + 1}_c{i + 1}"
-                        if edge_key in sigmoid_e_C:
-                            sig_e_ij = sigmoid_e_C[edge_key]
-                            nc_h_j = NC_h_C[j]
-                            neighbor_sum += sig_e_ij * nc_h_j
+    # Apply resource mask
+    u = u + resource_mask  # Invalid assignments get -inf
 
-                    mc_h_i = MC_h_C[i]
-                    aggr_result = mc_h_i + neighbor_sum
-                    norm_aggr = normalize_vector(aggr_result)
-                    relu_result = relu(norm_aggr)
-                    h_C_next[i] = h_C_current[i] + relu_result
+    # Compute probabilities using stable softmax
+    finite_u = torch.where(torch.isinf(u), torch.tensor(-1e10, device=device), u)
+    shifted_u = finite_u - torch.max(finite_u, dim=1, keepdim=True)[0]
+    eu = torch.exp(shifted_u)
+    zigma_u = torch.sum(eu, dim=1, keepdim=True)
+    p = eu / (zigma_u + 1e-10)  # Shape: (num_components, num_nodes)
 
-                h_C_layers.append(h_C_next)
+    # Handle cases where no valid nodes are available
+    invalid_components = (zigma_u.squeeze() == 0).nonzero(as_tuple=True)[0]
+    selected_nodes = torch.argmax(p, dim=1)  # Shape: (num_components,)
 
-            # Edge messaging
-            X = torch.rand(128, 128) * 2 - 1
-            Y = torch.rand(128, 128) * 2 - 1
-            Z = torch.rand(128, 128) * 2 - 1
-            e_C_layers = [e_C_dict]
+    # Fallback for invalid components using resource scores
+    for idx in invalid_components:
+        print(
+            f"Warning: No nodes available for {component_ids[idx]}, using resource scores"
+        )
+        resource_scores = [
+            max(S[str(nodes[0][j]["nodeID"])]["cpu"] - component_specs[idx]["cpu"], 0)
+            + max(
+                S[str(nodes[0][j]["nodeID"])]["memory"]
+                - component_specs[idx]["memory"],
+                0,
+            )
+            + max(
+                S[str(nodes[0][j]["nodeID"])]["disk"] - component_specs[idx]["disk"], 0
+            )
+            for j in range(num_nodes)
+        ]
+        selected_nodes[idx] = torch.argmax(torch.tensor(resource_scores, device=device))
 
-            for layer in range(num_components - 1):
-                e_C_current = e_C_layers[layer]
-                h_C_current = h_C_layers[layer]
-                e_C_next = e_C_current.copy()
-                for edge_key in e_C_current.keys():
-                    c1, c2 = map(int, edge_key.split('_c')[1:])
-                    i, j = c1 - 1, c2 - 1
-                    e_ij = e_C_current[edge_key]
-                    h_i, h_j = h_C_current[i], h_C_current[j]
-                    X_e_ij = e_ij @ X
-                    Y_h_i = h_i @ Y
-                    Z_h_j = h_j @ Z
-                    aggr = X_e_ij + Y_h_i + Z_h_j
-                    norm_aggr = normalize_vector(aggr)
-                    relu_result = relu(norm_aggr)
-                    e_C_next[edge_key] = e_ij + relu_result
-                e_C_layers.append(e_C_next)
+    # Update resources and record placements
+    for i, component_id in enumerate(component_ids):
+        selected_node_idx = selected_nodes[i].item()
+        selected_node = str(nodes[0][selected_node_idx]["nodeID"])
+        specs = component_specs[i]
+        S[selected_node]["cpu"] -= specs["cpu"]
+        S[selected_node]["memory"] -= specs["memory"]
+        S[selected_node]["disk"] -= specs["disk"]
+        placement[component_id] = selected_node
+        print(f"  - {component_id} assigned to Node {selected_node}")
 
-            # Store final layer
-            final_h_C_rounded = torch.round(h_C_layers[-1] * 100) / 100
-            final_e_C_rounded = {key: torch.round(val * 100) / 100
-                                 for key, val in e_C_layers[-1].items()}
+    print(f"\nResources after placement:")
+    for n_key, res in S.items():
+        print(
+            f"  {n_key}: cpu={res['cpu']:.2f}, memory={res['memory']:.2f}, disk={res['disk']:.2f}"
+        )
 
-            app_h_C_final[service_name] = final_h_C_rounded.tolist()
-            app_e_C_final[service_name] = {key: val.tolist()
-                                           for key, val in final_e_C_rounded.items()}
+    # Save parameters to settings.json
+    os.makedirs(os.path.dirname(settings_path), exist_ok=True)
+    with open(settings_path, "w") as f:
+        formatted_parameters = {
+            key: [[round(float(val), 2) for val in row] for row in param.cpu().tolist()]
+            for key, param in parameters.items()
+        }
+        json.dump(formatted_parameters, f, indent=4)
 
-            # Display final layer results
-            print(f"\nFinal Layer Results for {service_name} (User: {user_id}, Helper: {helper_id}):")
-            for i, h in enumerate(app_h_C_final[service_name]):
-                formatted_h = [f"{x:.2f}" for x in h[:5]]
-                print(f"  h_C_final[Component {i + 1}]: {formatted_h}...")
-            for edge_key, e in list(app_e_C_final[service_name].items())[:10]:
-                formatted_h = [f"{x:.2f}" for x in e[:5]]
-                print(f"  e_C_final[{edge_key}]: {formatted_h}...")
+    updated_parameters = parameters
 
-        # Save results with unique filenames
-        h_output_file = f"{output_prefix}_component.json"
-        e_output_file = f"{output_prefix}_Cedge.json"
-        with open(h_output_file, "w", encoding="utf-8") as f:
-            json.dump(app_h_C_final, f, indent=4)
-        with open(e_output_file, "w", encoding="utf-8") as f:
-            json.dump(app_e_C_final, f, indent=4)
-        print(f"\nFinal embeddings saved to {h_output_file} and {e_output_file}")
-
-
-if __name__ == "__main__":
-    # Example: Define multiple input file pairs and output prefixes
-    input_pairs = [
-        ("services1.json", "newcomponentsConnections1.json"),
-        ("services2.json", "newcomponentsConnections2.json"),
-        # Add more pairs as needed
-    ]
-    output_prefixes = ["msg1", "msg2"]  # Unique prefixes for output files
-
-    msg_component_processing(input_pairs, output_prefixes)
+    return placement, updated_parameters
